@@ -1,3 +1,71 @@
+#main {
+  width: 100vh;
+}
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+#hero {
+  background: url("../img/bg.png") no-repeat center/cover;
+  width: 1520px;
+  height: 580px;
+}
+#hero .container {
+  padding: 50px 80px;
+}
+#hero .container .hero {
+  display: flex;
+  justify-content: space-between;
+}
+#hero .container .hero .hero__left h1 {
+  width: 151px;
+  height: 54px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+#hero .container .hero .hero__left h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+#hero .container .hero .hero__left button {
+  width: 178px;
+  height: 40px;
+  background: #FF1A1A;
+  box-shadow: 0px 8px 20px rgba(26, 92, 255, 0.2);
+  border-radius: 10px;
+  border: none;
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.7s;
+  color: #FFFFFF;
+}
+#hero .container .hero .hero__left button:hover {
+  background: #000;
+  color: white;
+  box-shadow: 10px 10px 20px rgba(255, 0, 0, 0.82);
+  transition: 0.7s;
+  transform: translateY(-10px);
+}
+#hero .container .hero .hero__right {
+  display: flex;
+}
+#hero .container .hero .hero__right a {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 30px;
+  color: #FFFFFF;
+}
 
 /*# sourceMappingURL=style.css.map */
