@@ -1,0 +1,21 @@
+@media(max-width: 360px){
+  body{
+    width: 90%;
+  }
+  .hero img {
+    width: 360px;
+    height: 410px;
+  }
+  .hero .container .hero-content .hero__right a{
+   right: 300px;
+
+  }
+  .travel__cards {
+    position: absolute;
+    width: 360px;
+    height: 1090px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

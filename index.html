@@ -6,8 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sass</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
 <main id="main">
@@ -20,20 +22,22 @@
 
     </header>
     <section id="hero">
-
+        <img src="./img/bg.png" alt="">
         <div class="container">
-            <div class="hero">
-<div class="hero__left">
-    <h1>IT-КЛУБ</h1>
-    <h4>Международное сообщество для постоянного, <br>
-        непрерывного обучения, совершенствования, <br>
-        поддержки и продвижения своих</h4>
-    <button>Подать заявку</button>
-</div>
-                <div class="hero__right">
-                    <a href="#">IT-клуб</a>
-                    <a href="#">/ <ion-icon name="home-outline"></ion-icon></a>
+            <div class="hero-content">
+                <div class="hero__left">
+                    <h1>IT-КЛУБ</h1>
+                    <h4>Международное сообщество для постоянного, <br>
+                        непрерывного обучения, совершенствования, <br>
+                        поддержки и продвижения своих</h4>
+                    <button>Подать заявку</button>
                 </div>
+                <!--                <div class="hero__right">-->
+                <a href="#" class="a1">IT-клуб</a>
+                <a href="#" class="a2">/
+                    <ion-icon name="home-outline"></ion-icon>
+                </a>
+                <!--                </div>-->
             </div>
         </div>
     </section>
@@ -46,7 +50,164 @@
     </section>
     <section id="travel">
         <div class="container">
-            <div class="travel">
+            <div class="travel-content">
+                <div class="travel-top">
+                    <h1>ФОРМАТЫ IT КЛУБА</h1>
+                    <div class="travel__cards">
+                        <div class="travel__cards--card">
+                            <div class="travel__cards--card--top">
+                                <img src="./img/card-img.png" alt="">
+
+                                <h2>01.</h2>
+                            </div>
+                            <div class="travel__cards--card--bottom">
+                                <h4>Слеты клуба с участием резидентов <br>
+                                    со всего мира</h4>
+                                <p>Слеты проводятся 2 раза в год в формате масштабных <br>
+                                    форумов, pre-party, after-party c Маргуланом. Локации: <br>
+                                    Анталия, ОАЭ и другие</p>
+                                <button>Подробнее
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="travel__cards--card">
+                            <div class="travel__cards--card--top">
+                                <img src="./img/Group3.png" alt="">
+                                <h2>03.</h2>
+                            </div>
+                            <div class="travel__cards--card--bottom">
+                                <h4>Доступ к обучающим программам <br>
+                                    Кайдзен Школы</h4>
+                                <p>Из любой точки мира и в любое время обучайтесь ценным <br>
+                                    инструментам роста и масштабирования личной эффективности <br>
+                                    и своего бизнеса.</p>
+                                <button>Подробнее
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="travel__cards--card">
+                            <div class="travel__cards--card--top">
+                                <img src="./img/Group5.png" alt="">
+                                <h2>05.</h2>
+                            </div>
+                            <div class="travel__cards--card--bottom">
+                                <h4>Мастермайнд сессии</h4>
+                                <p>Каждый месяц онлайн встречи членов клуба с детальными <br>
+                                    разборами конкретных кейсов и вопросов членов Клуба</p>
+                                <button>Подробнее
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="travel__cards--card">
+                            <div class="travel__cards--card--top">
+                                <img src="./img/Group2.png" alt="">
+                                <h2>02.</h2>
+                            </div>
+                            <div class="travel__cards--card--bottom">
+                                <h4>Встречи с Маргуланом Сейсембаем и <br>
+                                    спикерами клуба</h4>
+                                <p>Ежемесячные закрытые онлайн встречи членов клуба - <br>
+                                    владельцев и топ-менеджеров крупных компаний. <br>
+                                    Наработанный опыт, успешные кейсы, подводные камни, </p>
+                                <button>Подробнее
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="travel__cards--card">
+                            <div class="travel__cards--card--top">
+                                <img src="./img/card-img4.png" alt="">
+                                <h2>04.</h2>
+                            </div>
+                            <div class="travel__cards--card--bottom">
+                                <h4>Оффлайн встречи в вашем городе</h4>
+                                <p>Каждый месяц в вашем городе будут проводиться бизнес- <br>
+                                    митинги с другими членами Клуба для знакомства, обмена <br>
+                                    опытом, нетворкинга и развития</p>
+                                <button>Подробнее
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="travel__cards--card">
+                            <div class="travel__cards--card--top">
+                                <img src="./img/card-img6.png" alt="">
+                                <h2>06.</h2>
+                            </div>
+                            <div class="travel__cards--card--bottom">
+                                <h4>Встречи с Маргуланом Сейсембаем и <br>
+                                    спикерами клуба</h4>
+                                <p>Ежемесячные закрытые онлайн встречи членов клуба - <br>
+                                    владельцев и топ-менеджеров крупных компаний. <br>
+                                    Наработанный опыт, успешные кейсы, подводные камни, </p>
+                                <button>Подробнее
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="travel-center">
+
+
+                    <h1>СОВМЕСТНЫЕ ПУТЕШЕСТВИЯ</h1>
+                    <div class="travel-center-card">
+                        <div class="card-left">
+                            <h3>Путешествия по всему миру</h3>
+                            <p>Трансформационные экспедиционные туры с Маргуланом и <br>
+                                другими известными экспертами в бизнесе, переговорах, <br>
+                                инвестициях и личной эффективности</p>
+                            <div class="card-left-center">
+                                <div class="card-left1">
+                                    <ion-icon name="chevron-down-outline" class="icon"></ion-icon>
+                                    <p>Новые яркие эмоции <br>
+                                        и инсайты</p>
+                                </div>
+                                <div class="card-left1">
+                                    <ion-icon name="chevron-down-outline" class="icon"></ion-icon>
+                                    <p>Переосмысление текущих <br>
+                                        задач и планов</p>
+                                </div>
+                            </div>
+                            <button>Подробнее</button>
+                        </div>
+                        <div class="card-right">
+                            <img src="./img/To_be_youself%201.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="travel-bottom">
+
+
+                    <h1>ИНВЕСТ КЛУБ </h1>
+                    <div class="travel-center-card">
+                        <div class="card-right">
+                            <img src="./img/To_be_youself%201%20(1).png" alt="">
+                        </div>
+                        <div class="card-left">
+                            <h3>Обучение инвестированию</h3>
+                            <p>Это сообщество частных инвесторов и партнеров которое дает <br>
+                                возможность делать совместные сделки с Маргуланом Сейсембаем</p>
+                            <div class="card-left-center">
+                                <div class="card-left1">
+                                    <ion-icon name="chevron-down-outline" class="icon"></ion-icon>
+                                    <p>Доступ к проектам, <br>
+                                        отобранным Маргуланом</p>
+                                </div>
+                                <div class="card-left1">
+                                    <ion-icon name="chevron-down-outline" class="icon"></ion-icon>
+                                    <p>Возможность стать
+                                        партнером Маргулана</p>
+                                </div>
+                            </div>
+                            <button>Подробнее</button>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -58,24 +219,76 @@
             </div>
         </div>
     </section>
-    <section id="prgres">
-        <div class="container">
-            <div class="progres">
-
-            </div>
-        </div>
-    </section>
-    <section id="adres">
-        <div class="container">
-            <div class="adres">
-
-            </div>
-        </div>
-    </section>
     <footer id="footer">
         <div class="container">
             <div class="footer">
+                <div class="footer-top">
+                    <div class="footer-top-left">
+                        <h1>ПОМОЖЕМ В ВЫБОРЕ</h1>
+                        <p>Оставьте заявку и наш менеджер <br>
+                            свяжется с вами и ответит на все <br>
+                            ваши вопросы</p>
+                    </div>
+                    <div class="footer-top-right">
+                        <div class="footer-top-right-input">
+                            <div>
+                                <p>ФИО *</p>
+                                <input type="text" placeholder="Иван Петров">
+                            </div>
+                            <div>
+                                <p>Номер телефона *</p>
+                                <input type="tel" placeholder="+996 550 01 22 08">
+                            </div>
+                            <div>
+                                <p>E-mail *</p>
+                                <input type="email" placeholder="example@mail.com">
+                            </div>
 
+                        </div>
+                        <div class="footer-top-right-bottom">
+                            <p>Ваши данные надежно защищены <br>
+                                и не будут переданы третьим лицам</p>
+                            <button>Отправить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-top">
+                        <img src="./img/logo.png" alt="">
+                        <div class="motion-web">
+                            <h3>motion-web.edu</h3>
+                            <a href="#">Наши курсы</a>
+                            <a href="#">IT-club</a>
+                            <a href="#">IT-camp</a>
+                        </div>
+                        <div class="footer-call">
+                            <h3>Связаться с нами</h3>
+                            <p>Если у вас возникли какие-либо <br>
+                                вопросы, пожалуйста, напишите <br>
+                                нам: <a href="#">motionweb312@gmil.com</a></p>
+                            <ion-icon name="logo-facebook" class="footer-icon"></ion-icon>
+                            <ion-icon name="logo-instagram" class="footer-icon"></ion-icon>
+                            <ion-icon name="logo-linkedin" class="footer-icon"></ion-icon>
+                            <div class="footer-icon1">
+                                <ion-icon name="logo-youtube" class="footer-icon"></ion-icon>
+                                <ion-icon name="logo-tiktok" class="footer-icon"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="footer-email">
+                            <h3>Адрес</h3>
+                            <p>OcOO МОУШН ВЕБ, г.Бишкек, <br>
+                                ул. Турусбекова, 109/3. <br>
+                                Идентификационный код: 661102300013</p>
+                        </div>
+                    </div>
+                    <div class="footer-bottom-bottom">
+                        <p>Авторские права © 2021 <a href="motionweb.edu">motionweb.edu</a></p>
+                        <div class="footer-bottom-bottom-right"></div>
+                        <p>Условия оказания услуг Политика возврата</p>
+                        <img src="./img/Visa.png" alt=>
+                        <img src="./img/Mastercard.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
