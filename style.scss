@@ -2,10 +2,56 @@
   margin: 0;
   padding: 0;
 }
+
 @mixin them {
   transform: translateY(20px);
   box-shadow: 0 10px 100px #c74141;
+  transition: 0.7s;
 }
+
+@mixin text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2C3E50;
+}
+
+@mixin little-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2C3E50;
+}
+
+@mixin btn {
+  width: 80px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #2C3E50;
+  cursor: pointer;
+}
+
+@mixin btn-focus {
+  background: #FF1A1A;
+  box-shadow: 0 20px 40px rgba(26, 92, 255, 0.2);
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+@mixin p-style {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #9099A3;
+}
+
 a, a:hover {
   text-decoration: none;
 }
@@ -15,7 +61,7 @@ a, a:hover {
 }
 
 .container {
-  padding: 30px 80px;
+  padding: 30px 130px;
   margin: 0 auto;
 }
 
@@ -32,13 +78,15 @@ body {
   background: #1E2024;
   position: relative;
   height: 82px;
-  box-shadow: 690px 270px 1000px   red;
+  box-shadow: 690px 270px 1000px red;
+
   .container {
 
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 10px;
 
       .header__logo {
         display: flex;
@@ -142,16 +190,455 @@ body {
         line-height: 21px;
         color: #FFFFFF;
         cursor: pointer;
-transition: 0.7s;
+        transition: 0.7s;
       }
     }
-button:hover {
-  @include them
 
-}
+    button:hover {
+      @include them
+
+    }
+
     .hero__logo {
       margin-right: 150px;
     }
   }
 }
+
+#courses {
+  .courses {
+    h1 {
+      font-weight: 700;
+      font-size: 36px;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+
+        .swiper-slide {
+border-radius: 15px;
+          font-size: 18px;
+          background: #fff;
+
+
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+
+          .coursers__cards {
+            position: relative;
+            width: 600px;
+            height: 300px;
+            background: #FFFFFF;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+
+
+            .coursers__cards-text {
+              .coursers__cards-text-top {
+                position: absolute;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                top: 30px;
+                img  {
+                  margin-top: 3px;
+                }
+                p {
+                  @include p-style;
+                  padding: 0 10px;
+                }
+
+                a {
+                  @include p-style
+                }
+
+              }
+
+              h2 {
+                margin-top: -80px;
+                font-weight: 700;
+                font-size: 20px;
+                width: 300px;
+                color: #2C3E50;
+                top: 100px;
+              }
+
+              p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #2C3E50;
+
+              }
+
+              button {
+                position: absolute;
+                width: 180px;
+                height: 40px;
+                background: #FF1A1A;
+                box-shadow: 0 8px 20px rgba(255, 26, 26, 0.2);
+                border-radius: 10px;
+                border: none;
+                bottom: 20px;
+                left: 20px;
+                cursor: pointer;
+                transition: 0.7s;
+
+                a {
+                  font-weight: 900;
+                  font-size: 14px;
+                  line-height: 21px;
+                  text-transform: capitalize;
+                  color: #FFFFFF;
+                }
+              }
+
+              button:hover {
+                @include them;
+                transform: translateY(-20px);
+              }
+            }
+
+            img {
+              margin-top: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+#webinars {
+  .webinars {
+    h1 {
+      font-weight: 700;
+      font-size: 36px;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+
+    .webinars__bottom-btn {
+      width: 300px;
+      height: 60px;
+      background: #FF1A1A;
+      box-shadow: 0 5px 8px rgba(255, 26, 26, 0.2);
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 18px;
+      color: #FFFFFF;
+      border: none;
+      margin-left: 37%;
+      margin-top: 30px;
+      cursor: pointer;
+      transition: 0.7s;
+    }
+
+    .webinars__bottom-btn:hover {
+      @include them
+    }
+
+    .webinars__label {
+
+      label {
+        @include btn;
+        padding: 5px 10px;
+      }
+    }
+
+    .webinars__cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 30px;
+
+      input {
+        display: none;
+      }
+
+      #business:checked ~ .card3 {
+        display: none;
+      }
+
+      #business:checked ~ .card4 {
+        display: none;
+      }
+
+      .webinars__cards--card {
+        position: relative;
+        width: 600px;
+        height: 350px;
+        background: #FFFFFF;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .webinars__cards--card-text {
+          padding-left: 20px;
+          margin-bottom: 40px;
+
+          .webinars__cards--card-text-top {
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 150px;
+            top: 20px;
+            left: 20px;
+
+            p {
+              @include p-style
+            }
+
+            a {
+              @include p-style
+            }
+          }
+
+          h2 {
+            @include text
+          }
+
+          p {
+            @include little-text;
+            margin: 10px 0;
+          }
+
+          button {
+            position: absolute;
+            width: 180px;
+            height: 40px;
+            background: #FF1A1A;
+            box-shadow: 0 8px 20px rgba(255, 26, 26, 0.2);
+            border-radius: 10px;
+            border: none;
+            bottom: 20px;
+            left: 20px;
+            cursor: pointer;
+            transition: 0.7s;
+
+            a {
+              font-weight: 900;
+              font-size: 14px;
+              line-height: 21px;
+              text-transform: capitalize;
+              color: #FFFFFF;
+            }
+          }
+
+          button:hover {
+            @include them;
+            transform: translateY(-20px);
+          }
+
+        }
+
+        img {
+          margin-right: -10px;
+          margin-top: -12px;
+        }
+
+        .users__img {
+          margin-top: 63px;
+        }
+
+        .wild-logo {
+          width: 200px;
+          height: 240px;
+          margin-right: 10px;
+        }
+
+        .full-stack-img {
+          padding: 30px;
+          border-radius: 50%;
+        }
+
+        .nft-family {
+          width: 300px;
+          height: 350px;
+          margin-top: 0;
+        }
+
+        span {
+          position: absolute;
+          width: 80px;
+          height: 40px;
+          background: #FF091E;
+          border-radius: 0 15px;
+          font-weight: 700;
+          font-size: 14px;
+          text-align: center;
+          color: #FFFFFF;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+#master-classes {
+  .master-classes {
+    h1 {
+      font-weight: 700;
+      font-size: 36px;
+      color: #FFFFFF;
+    }
+
+    .master-classes__label {
+      padding: 20px 0;
+
+      label {
+        @include btn;
+        padding: 5px 10px;
+      }
+
+      label:focus {
+        background: red;
+        color: #00A400;
+      }
+    }
+
+    .master-classes__input {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+
+      input {
+        display: none;
+      }
+
+      #busines:checked ~ .master-classes__input--card4,
+      #busines:checked ~ .master-classes__input--card5,
+      #busines:checked ~ .master-classes__input--card6 {
+        display: none;
+      }
+
+      .master-classes__input-card:hover {
+        background: rgba(148, 245, 99, 0.99);
+      }
+
+      .master-classes__input-card {
+        width: 360px;
+        height: 280px;
+        background: #FFFFFF;
+        border-radius: 12px;
+        padding: 20px 20px;
+        margin-bottom: 20px;
+
+        .master-classes__input-card-top {
+          display: flex;
+          justify-content: flex-start;
+        }
+
+        button {
+          width: 80px;
+          height: 20px;
+          background: #9099A3;
+          border-radius: 19px;
+          border: none;
+          font-weight: 400;
+          font-size: 12px;
+          color: #FFFFFF;
+          padding: 2px 2px;
+        }
+
+        a {
+          font-weight: 400;
+          font-size: 12px;
+          color: #9099A3;
+          margin-left: 10px;
+        }
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #2C3E50;
+        padding: 20px 0;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #2C3E50;
+        border-bottom: 0.5px solid #9099A3;
+        transform: rotate(-0.24deg);
+        padding-bottom: 20px;
+      }
+
+      .master-classes__input-card-bottom {
+        display: flex;
+        justify-content: start;
+        margin-top: 20px;
+
+        .master-classes__input-card-bottom-text {
+          margin-left: 20px;
+
+          h1 {
+            font-weight: 700;
+            font-size: 16px;
+            color: #2C3E50;
+            padding: 0 0;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            color: #9099A3;
+            padding: 0 0;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  .master-classes__button {
+    width: 340px;
+    height: 50px;
+    border: 2px solid #9099A3;
+    filter: drop-shadow(0px 5px 8px rgba(26, 92, 255, 0.2));
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 18px;
+    color: #9099A3;
+    background: none;
+    margin-left: 37%;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+
+  .master-classes__button:hover {
+    box-shadow: 0 10px 100px rgba(148, 245, 99, 0.99);
+    transform: translateY(20px);
+    transition: 0.7s;
+    background: transparent;
+    color: rgba(148, 245, 99, 0.99);
+    border: 2px solid rgba(148, 245, 99, 0.99);
+  }
+}
+
 
