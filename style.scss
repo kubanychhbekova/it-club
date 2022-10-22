@@ -1,3 +1,8 @@
+
+@import "reset";
+@import "mixins";
+@import "variables";
+
 * {
   margin: 0;
   padding: 0;
@@ -154,14 +159,11 @@ body {
   }
 }
 
+
+
+
 #hero {
-  position: relative;
-
   .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     .hero__text {
       h2 {
         font-weight: 400;
@@ -202,8 +204,16 @@ body {
     .hero__logo {
       margin-right: 150px;
     }
+
   }
 }
+
+
+
+
+
+
+
 
 #courses {
   .courses {
@@ -323,8 +333,6 @@ border-radius: 15px;
       }
     }
   }
-
-
 
 #webinars {
   .webinars {

@@ -1,6 +1,29 @@
 * {
   margin: 0;
   padding: 0;
+  border: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 a, a:hover {
@@ -87,14 +110,6 @@ body {
   color: #FFFFFF;
 }
 
-#hero {
-  position: relative;
-}
-#hero .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 #hero .hero .hero__text h2 {
   font-weight: 400;
   font-size: 24px;
