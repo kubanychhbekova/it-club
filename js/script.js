@@ -1,16 +1,8 @@
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-
-    loop: true,
-
-    // If we need pagination
+const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
     pagination: {
-        el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        el: ".swiper-pagination",
+        clickable: true,
     },
 });
