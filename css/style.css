@@ -21,67 +21,64 @@ body {
   margin: 0 auto;
 }
 
-#header {
-  margin-left: -200px;
-  background: #1E2024;
-  height: 150px;
+#hero .hero {
+  background: url("../img/Rectangle 2068.png") no-repeat center/cover;
+  min-height: 100vh;
+  width: 1516px;
+  margin-left: -190px;
 }
-#header .header {
-  padding: 20px;
+#hero .hero__top {
+  padding: 100px 150px;
 }
-#header .header:hover {
-  color: #d90d3d;
+#hero .hero__top h1 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+#hero .hero__top p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  padding: 20px 0;
+}
+#hero .hero__top button {
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  width: 178px;
+  height: 40px;
+  left: 80px;
+  top: 295px;
+  background: #FF1A1A;
+  box-shadow: 0 8px 20px rgba(118, 26, 255, 0.2);
+  border-radius: 10px;
+}
+#hero .hero__top button:hover {
+  color: #b1dac2;
   transition: 0.7s;
   transform: translateY(-10px);
-  box-shadow: 0 9px 10px -5px white;
+  box-shadow: 0 8px 20px rgb(198, 227, 210);
 }
-#header .header:focus {
+#hero .hero__top button:focus {
   background: black;
 }
-#header .header:active {
+#hero .hero__top button:active {
   background: #ff003b;
 }
-#header .header__logo {
+#hero .hero__title {
+  margin-left: 1100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: -300px;
 }
-#header .header__logo p {
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 12px;
-  color: #FFFFFF;
-  margin-left: -80px;
+#hero .hero__title p {
+  margin-right: 30px;
 }
-#header .header__logo p:hover {
-  color: #0d92d9;
-  transition: 0.7s;
-  transform: translateY(-10px);
-  box-shadow: 0 9px 10px -5px #ffffff;
-}
-#header .header__logo a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
+#hero .hero__title h6 {
   color: #9099A3;
-}
-#header .header__logo a:hover {
-  color: #0d92d9;
-  transition: 0.7s;
-  transform: translateY(-10px);
-  box-shadow: 0 9px 10px -5px #ffffff;
-}
-#header .header__logo a:focus {
-  background: black;
-}
-#header .header__logo a:active {
-  background: red;
-}
-#header .header__title a {
-  margin-left: 100px;
-}
-#header .header__img {
-  margin-right: 100px;
 }
 
 #club {
@@ -96,6 +93,18 @@ body {
   color: #FFFFFF;
   margin-left: -100px;
 }
+#club .club h1:hover {
+  color: #b1dac2;
+  transition: 0.7s;
+  transform: translateY(-10px);
+  box-shadow: 0 9px 10px -5px white;
+}
+#club .club h1:focus {
+  background: black;
+}
+#club .club h1:active {
+  background: #ff003b;
+}
 #club .club button {
   display: flex;
   align-items: center;
@@ -108,7 +117,7 @@ body {
 #club .club__btn1 p {
   width: 500px;
   height: 126px;
-  margin-bottom: 400px;
+  margin-bottom: 350px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -117,6 +126,18 @@ body {
   text-transform: capitalize;
   margin-left: 50px;
   color: #2C3E50;
+}
+#club .club__btn1 p:hover {
+  color: #0d92d9;
+  transition: 0.7s;
+  transform: translateY(-10px);
+  box-shadow: 0 9px 10px -5px #ffffff;
+}
+#club .club__button :hover {
+  color: #0d92d9;
+  transition: 0.7s;
+  transform: translateY(-10px);
+  box-shadow: 0 9px 10px -5px #ffffff;
 }
 #club .club__img {
   margin-top: 180px;
@@ -128,7 +149,7 @@ body {
   width: 510px;
   height: 126px;
   left: 60px;
-  top: 274px;
+  top: 840px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -287,6 +308,151 @@ body {
 #club .club__button img {
   margin-left: 300px;
   margin-top: 70px;
+}
+
+#travel {
+  background: #0a0a0a;
+  margin-left: -100px;
+  padding: 100px;
+}
+#travel .travel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#travel .travel__format {
+  margin: 30px 0;
+}
+#travel .travel__format button {
+  width: 500px;
+  height: 300px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+#travel .travel__format h1 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+#travel .travel__format h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: -450px;
+  margin-right: 100px;
+  color: #2C3E50;
+}
+#travel .travel__format p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-right: 100px;
+  color: #2C3E50;
+}
+#travel .travel__button {
+  display: flex;
+  align-items: center;
+  margin-left: 280px;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-top: -5px;
+  color: #FFFFFF;
+}
+#travel .travel__button img {
+  margin-top: 10px;
+}
+#travel .travel__button h3 {
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-left: -170px;
+}
+#travel .travel__img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 500px;
+}
+#travel .travel__img1 {
+  margin-left: 20px;
+}
+#travel .travel__img2 {
+  margin-right: 20px;
+}
+#travel .travel__format1 {
+  margin-top: 100px;
+}
+#travel .travel__format1 button {
+  width: 500px;
+  height: 300px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+#travel .travel__format1 h1 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+#travel .travel__format1 h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: -450px;
+  margin-right: 100px;
+  color: #2C3E50;
+}
+#travel .travel__format1 p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-right: 100px;
+  color: #2C3E50;
+}
+#travel .travel__button1 {
+  display: flex;
+  align-items: center;
+  margin-left: 280px;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-top: -5px;
+  color: #FFFFFF;
+}
+#travel .travel__button1 img {
+  margin-top: 10px;
+}
+#travel .travel__button1 h3 {
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-left: -170px;
+}
+#travel .travel__img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 500px;
+}
+#travel .travel__img3 {
+  margin-top: 70px;
+}
+#travel .travel__img2 {
+  margin-right: 20px;
+}
+#travel .travel__img2__button2 {
+  display: flex;
+  align-items: center;
+  margin-left: 280px;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-top: -5px;
+  color: #FFFFFF;
 }
 
 #countries {
