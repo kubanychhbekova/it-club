@@ -1,0 +1,64 @@
+@mixin them {
+  transform: translateY(20px);
+  box-shadow: 0 10px 100px #c74141;
+  transition: 0.7s;
+}
+
+@mixin text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2C3E50;
+}
+
+@mixin little-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2C3E50;
+}
+
+@mixin btn {
+  width: 80px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #2C3E50;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+@mixin btn1 {
+  width: 180px;
+  height: 40.43px;
+  background: #FF1A1A;
+  box-shadow: 0 8px 20px rgba(255, 26, 26, 0.2);
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+
+
+}
+
+@mixin btn-focus {
+  background: #FF1A1A;
+  box-shadow: 0 20px 40px rgba(26, 92, 255, 0.2);
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+@mixin p-style {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #9099A3;
+}

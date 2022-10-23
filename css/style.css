@@ -16,78 +16,54 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
-  width: 1140px;
-  margin: 0 auto;
-}
-
-* {
-  margin: 0 auto;
-  padding: 0;
-}
-
-a, a:hover {
-  text-decoration: none;
-}
-
 #main {
   background: #1E2023;
 }
 
-ul li {
-  list-style: none;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background: #1E2024;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 #header {
   background: #1E2024;
   position: relative;
-  height: 82px;
   box-shadow: 690px 270px 1000px red;
 }
-#header .container .header {
+#header .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
-#header .container .header .header__logo {
+#header .header__logo {
   display: flex;
   justify-content: inherit;
   align-items: center;
-  width: 110px;
 }
-#header .container .header .header__logo .header__logo--text {
+#header .header__logo .header__text {
   font-weight: 400;
   font-size: 8px;
   line-height: 12px;
   color: #FFFFFF;
 }
-#header .container .header .header__menu {
+#header .header__menu {
   display: flex;
-  justify-content: inherit;
+  justify-content: initial;
   align-items: center;
-  width: 500px;
 }
-#header .container .header .header__menu a {
+#header .header__menu a {
   font-weight: 500;
   font-size: 14px;
   color: #9099A3;
   text-transform: capitalize;
+  padding: 0 30px;
 }
-#header .container .header .header__menu a:focus {
+#header .header__menu a:focus {
   color: white;
   border-bottom: 2px solid gray;
 }
-#header .container .header .header__language {
-  width: 192px;
-  height: 30px;
-}
-#header .container .header .header__language select {
+#header .header__language select {
   width: 45px;
   height: 25.6px;
   border-radius: 12px;
@@ -95,14 +71,16 @@ body {
   background: red;
   color: #FFFFFF;
   text-align: center;
+  text-transform: capitalize;
 }
-#header .container .header .header__language select option {
+#header .header__language select option {
   width: 45px;
   height: 25.6px;
   border-radius: 12px;
   border: none;
   background: red;
   color: #FFFFFF;
+  text-transform: capitalize;
 }
 
 #hero1 .hero1 {
@@ -110,40 +88,35 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-#hero1 .hero1 .hero1__text h2 {
+#hero1 .hero1__text h2 {
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
   color: #9099A3;
 }
-#hero1 .hero1 .hero1__text h1 {
+#hero1 .hero1__text h1 {
   font-weight: 700;
   font-size: 48px;
   line-height: 72px;
   color: #FFFFFF;
   padding: 13px 0;
 }
-#hero1 .hero1 .hero1__text button {
+#hero1 .hero1__text button {
   width: 180px;
   height: 40.43px;
   background: #FF1A1A;
   box-shadow: 0 8px 20px rgba(255, 26, 26, 0.2);
   border-radius: 10px;
-  border: none;
   font-weight: 900;
   font-size: 14px;
-  line-height: 21px;
+  text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
-  transition: 0.7s;
 }
 #hero1 .hero1 button:hover {
   transform: translateY(20px);
   box-shadow: 0 10px 100px #c74141;
   transition: 0.7s;
-}
-#hero1 .hero1 .hero1__logo {
-  margin-right: 10px;
 }
 
 #courses .courses h1 {
@@ -176,39 +149,33 @@ body {
 }
 #courses .courses .swiper .swiper-slide .coursers__cards {
   position: relative;
-  width: 600px;
-  height: 300px;
   background: #FFFFFF;
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
 }
-#courses .courses .swiper .swiper-slide .coursers__cards .coursers__cards-text .coursers__cards-text-top {
+#courses .courses .swiper .swiper-slide .coursers__cards .coursers__text .coursers__top {
   position: absolute;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  top: 30px;
+  top: 10px;
 }
-#courses .courses .swiper .swiper-slide .coursers__cards .coursers__cards-text .coursers__cards-text-top img {
-  margin-top: 3px;
-}
-#courses .courses .swiper .swiper-slide .coursers__cards .coursers__cards-text .coursers__cards-text-top p {
+#courses .courses .swiper .swiper-slide .coursers__cards .coursers__text .coursers__top p {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: #9099A3;
   padding: 0 10px;
 }
-#courses .courses .swiper .swiper-slide .coursers__cards .coursers__cards-text .coursers__cards-text-top a {
+#courses .courses .swiper .swiper-slide .coursers__cards .coursers__text .coursers__top a {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: #9099A3;
 }
-#courses .courses .swiper .swiper-slide .coursers__cards .coursers__cards-text h2 {
+#courses .courses .swiper .swiper-slide .coursers__cards .coursers__text h2 {
   margin-top: -80px;
   font-weight: 700;
   font-size: 20px;
@@ -216,13 +183,13 @@ body {
   color: #2C3E50;
   top: 100px;
 }
-#courses .courses .swiper .swiper-slide .coursers__cards .coursers__cards-text p {
+#courses .courses .swiper .swiper-slide .coursers__cards .coursers__text p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #2C3E50;
 }
-#courses .courses .swiper .swiper-slide .coursers__cards .coursers__cards-text button {
+#courses .courses .swiper .swiper-slide .coursers__cards .coursers__text button {
   position: absolute;
   width: 180px;
   height: 40px;
@@ -235,21 +202,22 @@ body {
   cursor: pointer;
   transition: 0.7s;
 }
-#courses .courses .swiper .swiper-slide .coursers__cards .coursers__cards-text button a {
+#courses .courses .swiper .swiper-slide .coursers__cards .coursers__text button a {
   font-weight: 900;
   font-size: 14px;
   line-height: 21px;
   text-transform: capitalize;
   color: #FFFFFF;
 }
-#courses .courses .swiper .swiper-slide .coursers__cards .coursers__cards-text button:hover {
+#courses .courses .swiper .swiper-slide .coursers__cards .coursers__text button:hover {
   transform: translateY(20px);
   box-shadow: 0 10px 100px #c74141;
   transition: 0.7s;
   transform: translateY(-20px);
 }
 #courses .courses .swiper .swiper-slide .coursers__cards img {
-  margin-top: 60px;
+  display: flex;
+  align-items: end;
 }
 
 #webinars .webinars {
@@ -261,27 +229,27 @@ body {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
-#webinars .webinars .webinars__bottom-btn {
-  width: 300px;
-  height: 60px;
+#webinars .webinars .webinars__btn {
+  width: 180px;
+  height: 40.43px;
   background: #FF1A1A;
-  box-shadow: 0 5px 8px rgba(255, 26, 26, 0.2);
-  border-radius: 20px;
-  font-weight: 700;
-  font-size: 18px;
+  box-shadow: 0 8px 20px rgba(255, 26, 26, 0.2);
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
   color: #FFFFFF;
-  border: none;
-  margin-left: 37%;
-  margin-top: 30px;
   cursor: pointer;
-  transition: 0.7s;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
 }
-#webinars .webinars .webinars__bottom-btn:hover {
+#webinars .webinars .webinars__btn:hover {
   transform: translateY(20px);
   box-shadow: 0 10px 100px #c74141;
   transition: 0.7s;
 }
-#webinars .webinars .webinars__label label {
+#webinars .webinars__label label {
   width: 80px;
   height: 40px;
   background: #FFFFFF;
@@ -291,27 +259,28 @@ body {
   font-size: 18px;
   color: #2C3E50;
   cursor: pointer;
+  transition: 0.7s;
   padding: 5px 10px;
 }
-#webinars .webinars .webinars__cards {
+#webinars .webinars__cards {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 30px;
 }
-#webinars .webinars .webinars__cards input {
+#webinars .webinars__cards input {
   display: none;
 }
-#webinars .webinars .webinars__cards #business:checked ~ .card3 {
+#webinars .webinars__cards #business:checked ~ .card3 {
   display: none;
 }
-#webinars .webinars .webinars__cards #business:checked ~ .card4 {
+#webinars .webinars__cards #business:checked ~ .card4 {
   display: none;
 }
-#webinars .webinars .webinars__cards .webinars__cards--card {
+#webinars .webinars__cards .webinars__card {
   position: relative;
-  width: 550px;
+  width: 500px;
   height: 300px;
   background: #FFFFFF;
   border-radius: 15px;
@@ -320,11 +289,11 @@ body {
   align-items: center;
   margin-bottom: 30px;
 }
-#webinars .webinars .webinars__cards .webinars__cards--card .webinars__cards--card-text {
-  padding-left: 20px;
+#webinars .webinars__cards .webinars__card .webinars__text {
   margin-bottom: 40px;
+  padding-left: 10px;
 }
-#webinars .webinars .webinars__cards .webinars__cards--card .webinars__cards--card-text .webinars__cards--card-text-top {
+#webinars .webinars__cards .webinars__card .webinars__text .webinars__top {
   position: absolute;
   display: flex;
   justify-content: space-around;
@@ -333,78 +302,73 @@ body {
   top: 20px;
   left: 20px;
 }
-#webinars .webinars .webinars__cards .webinars__cards--card .webinars__cards--card-text .webinars__cards--card-text-top p {
+#webinars .webinars__cards .webinars__card .webinars__text .webinars__top p {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: #9099A3;
 }
-#webinars .webinars .webinars__cards .webinars__cards--card .webinars__cards--card-text .webinars__cards--card-text-top a {
+#webinars .webinars__cards .webinars__card .webinars__text .webinars__top a {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: #9099A3;
 }
-#webinars .webinars .webinars__cards .webinars__cards--card .webinars__cards--card-text h2 {
+#webinars .webinars__cards .webinars__card .webinars__text h2 {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
   color: #2C3E50;
 }
-#webinars .webinars .webinars__cards .webinars__cards--card .webinars__cards--card-text p {
+#webinars .webinars__cards .webinars__card .webinars__text p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #2C3E50;
-  margin: 10px 0;
 }
-#webinars .webinars .webinars__cards .webinars__cards--card .webinars__cards--card-text button {
+#webinars .webinars__cards .webinars__card .webinars__text button {
   position: absolute;
-  width: 180px;
-  height: 40px;
+  padding: 10px;
   background: #FF1A1A;
   box-shadow: 0 8px 20px rgba(255, 26, 26, 0.2);
   border-radius: 10px;
   border: none;
-  bottom: 20px;
-  left: 20px;
   cursor: pointer;
   transition: 0.7s;
+  bottom: 20px;
 }
-#webinars .webinars .webinars__cards .webinars__cards--card .webinars__cards--card-text button a {
+#webinars .webinars__cards .webinars__card .webinars__text button a {
   font-weight: 900;
   font-size: 14px;
-  line-height: 21px;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: white;
 }
-#webinars .webinars .webinars__cards .webinars__cards--card .webinars__cards--card-text button:hover {
+#webinars .webinars__cards .webinars__card .webinars__text button:hover {
   transform: translateY(20px);
   box-shadow: 0 10px 100px #c74141;
   transition: 0.7s;
   transform: translateY(-20px);
 }
-#webinars .webinars .webinars__cards .webinars__cards--card .users__img {
+#webinars .webinars__cards .webinars__card .users__img {
   margin-top: 15px;
 }
-#webinars .webinars .webinars__cards .webinars__cards--card .wild-logo {
+#webinars .webinars__cards .webinars__card .wild-logo {
   width: 200px;
   height: 240px;
   margin-right: 10px;
 }
-#webinars .webinars .webinars__cards .webinars__cards--card .full-stack-img {
+#webinars .webinars__cards .webinars__card .full-stack-img {
   padding: 30px;
   border-radius: 50%;
 }
-#webinars .webinars .webinars__cards .webinars__cards--card .nft-family {
+#webinars .webinars__cards .webinars__card .nft-family {
   width: 280px;
   height: 300px;
   margin-top: 0;
 }
-#webinars .webinars .webinars__cards .webinars__cards--card span {
+#webinars .webinars__cards .webinars__card span {
   position: absolute;
-  width: 80px;
-  height: 40px;
+  padding: 10px;
   background: #FF091E;
   border-radius: 0 15px;
   font-weight: 700;
@@ -423,10 +387,10 @@ body {
   font-size: 36px;
   color: #FFFFFF;
 }
-#master-classes .master-classes .master-classes__label {
+#master-classes .master-classes__label {
   padding: 20px 0;
 }
-#master-classes .master-classes .master-classes__label label {
+#master-classes .master-classes__label label {
   width: 80px;
   height: 40px;
   background: #FFFFFF;
@@ -436,66 +400,63 @@ body {
   font-size: 18px;
   color: #2C3E50;
   cursor: pointer;
+  transition: 0.7s;
   padding: 5px 10px;
 }
-#master-classes .master-classes .master-classes__label label:focus {
+#master-classes .master-classes__label label:focus {
   background: red;
   color: #00A400;
 }
-#master-classes .master-classes .master-classes__input {
+#master-classes .master-classes__input {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
 }
-#master-classes .master-classes .master-classes__input input {
+#master-classes .master-classes__input input {
   display: none;
 }
-#master-classes .master-classes .master-classes__input #busines:checked ~ .master-classes__input--card4,
-#master-classes .master-classes .master-classes__input #busines:checked ~ .master-classes__input--card5,
-#master-classes .master-classes .master-classes__input #busines:checked ~ .master-classes__input--card6 {
+#master-classes .master-classes__input #busines:checked ~ .master-classes__card4,
+#master-classes .master-classes__input #busines:checked ~ .master-classes__card5,
+#master-classes .master-classes__input #busines:checked ~ .master-classes__card6 {
   display: none;
 }
-#master-classes .master-classes .master-classes__input .master-classes__input-card:hover {
+#master-classes .master-classes__input .master-classes__card:hover {
   background: rgba(148, 245, 99, 0.99);
 }
-#master-classes .master-classes .master-classes__input .master-classes__input-card {
-  width: 330px;
-  height: 280px;
+#master-classes .master-classes__input .master-classes__card {
+  width: 350px;
   background: #FFFFFF;
   border-radius: 12px;
   padding: 20px 20px;
   margin-bottom: 20px;
 }
-#master-classes .master-classes .master-classes__input .master-classes__input-card .master-classes__input-card-top {
+#master-classes .master-classes__input .master-classes__card .master-classes__top {
   display: flex;
-  justify-content: flex-start;
+  justify-content: start;
 }
-#master-classes .master-classes .master-classes__input .master-classes__input-card button {
-  width: 80px;
-  height: 20px;
+#master-classes .master-classes__input .master-classes__card button {
+  padding: 5px;
   background: #9099A3;
   border-radius: 19px;
   border: none;
   font-weight: 400;
   font-size: 12px;
   color: #FFFFFF;
-  padding: 2px 2px;
 }
-#master-classes .master-classes .master-classes__input .master-classes__input-card a {
+#master-classes .master-classes__input .master-classes__card a {
   font-weight: 400;
   font-size: 12px;
   color: #9099A3;
-  margin-left: 10px;
 }
-#master-classes .master-classes .master-classes__input h1 {
+#master-classes .master-classes__input h1 {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
   color: #2C3E50;
   padding: 20px 0;
 }
-#master-classes .master-classes .master-classes__input p {
+#master-classes .master-classes__input p {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -504,21 +465,21 @@ body {
   transform: rotate(-0.24deg);
   padding-bottom: 20px;
 }
-#master-classes .master-classes .master-classes__input .master-classes__input-card-bottom {
+#master-classes .master-classes__input .master-classes__bottom {
   display: flex;
   justify-content: start;
   margin-top: 20px;
 }
-#master-classes .master-classes .master-classes__input .master-classes__input-card-bottom .master-classes__input-card-bottom-text {
+#master-classes .master-classes__input .master-classes__bottom .master-classes__text {
   margin-left: 20px;
 }
-#master-classes .master-classes .master-classes__input .master-classes__input-card-bottom .master-classes__input-card-bottom-text h1 {
+#master-classes .master-classes__input .master-classes__bottom .master-classes__text h1 {
   font-weight: 700;
   font-size: 16px;
   color: #2C3E50;
   padding: 0 0;
 }
-#master-classes .master-classes .master-classes__input .master-classes__input-card-bottom .master-classes__input-card-bottom-text p {
+#master-classes .master-classes__input .master-classes__bottom .master-classes__text p {
   font-weight: 400;
   font-size: 14px;
   color: #9099A3;
@@ -535,7 +496,6 @@ body {
   font-size: 18px;
   color: #9099A3;
   background: none;
-  margin-left: 37%;
   cursor: pointer;
   transition: 0.7s;
 }
@@ -608,7 +568,7 @@ body {
   box-shadow: 0 9px 10px -5px #ffffff;
 }
 #address .address__contact input {
-  width: 580px;
+  width: 500px;
   height: 60px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
@@ -636,8 +596,6 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  width: 336px;
-  height: 40px;
 }
 #address .address__btn p:hover {
   color: #d90d3d;
@@ -706,11 +664,10 @@ body {
 }
 #reviews .reviews .swiper .swiper-slide .reviews__cards {
   position: relative;
-  width: 500px;
-  height: 235px;
   background: #1E2023;
   border-radius: 15px;
   text-align: center;
+  padding: 30px;
 }
 #reviews .reviews .swiper .swiper-slide .reviews__cards h5 {
   font-weight: 400;
@@ -720,24 +677,26 @@ body {
   padding: 5px 0;
   color: #FFFFFF;
 }
-#reviews .reviews .swiper .swiper-slide .reviews__cards .reviews__cards--text {
+#reviews .reviews .swiper .swiper-slide .reviews__cards .reviews__text {
   display: flex;
   justify-content: center;
+  padding: 10px 0;
 }
-#reviews .reviews .swiper .swiper-slide .reviews__cards .reviews__cards--text h4 {
+#reviews .reviews .swiper .swiper-slide .reviews__cards .reviews__text h4 {
   font-weight: 700;
   font-size: 14px;
   color: #FFFFFF;
 }
-#reviews .reviews .swiper .swiper-slide .reviews__cards .reviews__cards--text p {
+#reviews .reviews .swiper .swiper-slide .reviews__cards .reviews__text p {
   font-weight: 400;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
-  margin-left: 10px;
+  line-height: 18px;
+  color: #9099A3;
+  margin-left: 5px;
 }
 #reviews .reviews .swiper .swiper-slide .reviews__cards button {
-  width: 206px;
-  height: 40px;
+  width: 180px;
+  height: 40.43px;
   background: #FF1A1A;
   box-shadow: 0 8px 20px rgba(255, 26, 26, 0.2);
   border-radius: 10px;
@@ -745,50 +704,47 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   color: #FFFFFF;
-  border: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: 190px;
-  margin-top: 10px;
   cursor: pointer;
 }
 
-#website .website {
+#footer {
+  background: #1E2024;
+}
+#footer .footer {
   padding: 120px;
 }
-#website .website .website__top {
+#footer .footer .footer__top {
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
-#website .website .website__top img {
+#footer .footer .footer__top img {
   width: 79px;
   height: 90px;
 }
-#website .website .website__top h4 {
+#footer .footer .footer__top h4 {
   font-weight: 700;
   font-size: 18px;
   color: #FFFFFF;
 }
-#website .website .website__top p, #website .website .website__top a {
+#footer .footer .footer__top p, #footer .footer .footer__top a {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: #9099A3;
 }
-#website .website .website__top .website__top--menu a {
+#footer .footer .footer__top .footer__menu a {
   display: flex;
   flex-direction: column;
   padding: 10px 0;
 }
-#website .website .website__top .website__top--connection p {
+#footer .footer .footer__top .footer__connection p {
   padding: 15px 0;
 }
-#website .website .website__top .website__top--connection p a {
+#footer .footer .footer__top .footer__connection p a {
   color: #0d92d9;
 }
-#website .website .website__top .website__top--connection .website__top--connection--set a .website__top--connection--set-icon {
+#footer .footer .footer__top .footer__connection .footer__set a .footer__set-icon {
   background: #DADADA;
   height: 20px;
   width: 20px;
@@ -797,27 +753,27 @@ body {
   margin: 5px 2px;
   color: black;
 }
-#website .website .website__top .website__top--address p {
+#footer .footer .footer__top .footer__address p {
   padding: 15px 0;
 }
-#website .website .website__bottom {
+#footer .footer .footer__bottom {
   margin-top: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#website .website .website__bottom p {
+#footer .footer .footer__bottom p {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: #9099A3;
 }
-#website .website .website__bottom .website__bottom--right {
+#footer .footer .footer__bottom .footer__bottom--right {
   display: flex;
   justify-content: inherit;
   align-items: center;
 }
-#website .website .website__bottom .website__bottom--right img {
+#footer .footer .footer__bottom .footer__bottom--right img {
   padding: 0 10px;
 }
 
