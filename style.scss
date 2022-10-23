@@ -3,7 +3,7 @@
 @import "variables";
 
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -643,9 +643,11 @@ body {
 #address {
   .address {
     padding: 50px 0;
-
+display: flex;
+    justify-content: space-between;
+    align-items: start;
     &__gen {
-      margin-left: -100px;
+
     }
 
     &__gen:hover {
@@ -699,8 +701,7 @@ body {
     }
 
     &__contact {
-      margin-left: 600px;
-      margin-top: -120px;
+
     }
 
     &__contact p {
