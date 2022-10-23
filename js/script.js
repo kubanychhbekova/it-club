@@ -6,3 +6,9 @@ const swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
 });
+
+
+
+
+
+

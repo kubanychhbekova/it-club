@@ -1,6 +1,29 @@
 * {
   margin: 0;
   padding: 0;
+  border: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 a, a:hover {
@@ -9,11 +32,6 @@ a, a:hover {
 
 #main {
   background: #1E2023;
-}
-
-.container {
-  padding: 30px 130px;
-  margin: 0 auto;
 }
 
 ul li {
@@ -87,28 +105,25 @@ body {
   color: #FFFFFF;
 }
 
-#hero {
-  position: relative;
-}
-#hero .hero {
+#hero1 .hero1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#hero .hero .hero__text h2 {
+#hero1 .hero1 .hero1__text h2 {
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
   color: #9099A3;
 }
-#hero .hero .hero__text h1 {
+#hero1 .hero1 .hero1__text h1 {
   font-weight: 700;
   font-size: 48px;
   line-height: 72px;
   color: #FFFFFF;
   padding: 13px 0;
 }
-#hero .hero .hero__text button {
+#hero1 .hero1 .hero1__text button {
   width: 180px;
   height: 40.43px;
   background: #FF1A1A;
@@ -122,13 +137,13 @@ body {
   cursor: pointer;
   transition: 0.7s;
 }
-#hero .hero button:hover {
+#hero1 .hero1 button:hover {
   transform: translateY(20px);
   box-shadow: 0 10px 100px #c74141;
   transition: 0.7s;
 }
-#hero .hero .hero__logo {
-  margin-right: 150px;
+#hero1 .hero1 .hero1__logo {
+  margin-right: 10px;
 }
 
 #courses .courses h1 {
@@ -237,6 +252,9 @@ body {
   margin-top: 60px;
 }
 
+#webinars .webinars {
+  margin-top: 50px;
+}
 #webinars .webinars h1 {
   font-weight: 700;
   font-size: 36px;
@@ -277,8 +295,9 @@ body {
 }
 #webinars .webinars .webinars__cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 30px;
 }
 #webinars .webinars .webinars__cards input {
@@ -292,8 +311,8 @@ body {
 }
 #webinars .webinars .webinars__cards .webinars__cards--card {
   position: relative;
-  width: 600px;
-  height: 350px;
+  width: 550px;
+  height: 300px;
   background: #FFFFFF;
   border-radius: 15px;
   display: flex;
@@ -310,7 +329,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 150px;
+  width: 200px;
   top: 20px;
   left: 20px;
 }
@@ -365,12 +384,8 @@ body {
   transition: 0.7s;
   transform: translateY(-20px);
 }
-#webinars .webinars .webinars__cards .webinars__cards--card img {
-  margin-right: -10px;
-  margin-top: -12px;
-}
 #webinars .webinars .webinars__cards .webinars__cards--card .users__img {
-  margin-top: 63px;
+  margin-top: 15px;
 }
 #webinars .webinars .webinars__cards .webinars__cards--card .wild-logo {
   width: 200px;
@@ -382,8 +397,8 @@ body {
   border-radius: 50%;
 }
 #webinars .webinars .webinars__cards .webinars__cards--card .nft-family {
-  width: 300px;
-  height: 350px;
+  width: 280px;
+  height: 300px;
   margin-top: 0;
 }
 #webinars .webinars .webinars__cards .webinars__cards--card span {
@@ -400,6 +415,9 @@ body {
   right: 0;
 }
 
+#master-classes .master-classes {
+  margin-top: 50px;
+}
 #master-classes .master-classes h1 {
   font-weight: 700;
   font-size: 36px;
@@ -442,7 +460,7 @@ body {
   background: rgba(148, 245, 99, 0.99);
 }
 #master-classes .master-classes .master-classes__input .master-classes__input-card {
-  width: 360px;
+  width: 330px;
   height: 280px;
   background: #FFFFFF;
   border-radius: 12px;
@@ -528,6 +546,283 @@ body {
   background: transparent;
   color: rgba(148, 245, 99, 0.99);
   border: 2px solid rgba(148, 245, 99, 0.99);
+}
+
+#address .address {
+  padding: 50px 0;
+}
+#address .address__gen {
+  margin-left: -100px;
+}
+#address .address__gen:hover {
+  color: #d90d3d;
+  transition: 0.7s;
+  transform: translateY(-10px);
+  box-shadow: 0 9px 10px -5px white;
+}
+#address .address__gen h1 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+#address .address__gen h1:hover {
+  color: #d90d3d;
+  transition: 0.7s;
+  transform: translateY(-10px);
+  box-shadow: 0 9px 10px -5px white;
+}
+#address .address__gen h1:focus {
+  background: black;
+}
+#address .address__gen h1:active {
+  background: #ff003b;
+}
+#address .address__gen p {
+  padding: 10px 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: #9099A3;
+}
+#address .address__gen p:hover {
+  color: #d90d3d;
+  transition: 0.7s;
+  transform: translateY(-10px);
+  box-shadow: 0 9px 10px -5px white;
+}
+#address .address__gen p:focus {
+  background: black;
+}
+#address .address__gen p:active {
+  background: #ff003b;
+}
+#address .address__contact {
+  margin-left: 600px;
+  margin-top: -120px;
+}
+#address .address__contact p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9099A3;
+  padding: 10px 0;
+}
+#address .address__contact p:hover {
+  color: #0d92d9;
+  transition: 0.7s;
+  transform: translateY(-10px);
+  box-shadow: 0 9px 10px -5px #ffffff;
+}
+#address .address__contact input {
+  width: 580px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 0 10px;
+  box-shadow: 0 80px 1000px 2px red;
+}
+#address .address input:hover {
+  color: #c6e3d2;
+  transition: 0.7s;
+  transform: translateY(-10px);
+  box-shadow: 0 9px 10px -5px white;
+}
+#address .address input:focus {
+  background: black;
+}
+#address .address input:active {
+  background: #b1dac2;
+}
+#address .address__btn {
+  display: flex;
+  align-items: center;
+}
+#address .address__btn p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  width: 336px;
+  height: 40px;
+}
+#address .address__btn p:hover {
+  color: #d90d3d;
+  transition: 0.7s;
+  transform: translateY(-10px);
+  box-shadow: 0 9px 10px -5px white;
+}
+#address .address__btn p:focus {
+  background: black;
+}
+#address .address__btn p:active {
+  background: #ff003b;
+}
+#address .address__btn button {
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+  width: 280px;
+  height: 60px;
+  background: #FF1A1A;
+  box-shadow: 0 5px 8px rgba(26, 92, 255, 0.2);
+  border-radius: 15px;
+  margin: 20px;
+}
+#address .address button:hover {
+  color: #121d0c;
+  transition: 0.7s;
+  transform: translateY(-10px);
+  box-shadow: 0 9px 10px -5px white;
+}
+#address .address button:focus {
+  background: black;
+}
+#address .address button:active {
+  background: #ff003b;
+}
+
+#reviews .reviews h1 {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  padding: 20px 0;
+  color: #FFFFFF;
+}
+#reviews .reviews .swiper {
+  width: 100%;
+  height: 100%;
+}
+#reviews .reviews .swiper .swiper-slide {
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#reviews .reviews .swiper .swiper-slide .reviews__cards {
+  position: relative;
+  width: 500px;
+  height: 235px;
+  background: #1E2023;
+  border-radius: 15px;
+  text-align: center;
+}
+#reviews .reviews .swiper .swiper-slide .reviews__cards h5 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  padding: 5px 0;
+  color: #FFFFFF;
+}
+#reviews .reviews .swiper .swiper-slide .reviews__cards .reviews__cards--text {
+  display: flex;
+  justify-content: center;
+}
+#reviews .reviews .swiper .swiper-slide .reviews__cards .reviews__cards--text h4 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+#reviews .reviews .swiper .swiper-slide .reviews__cards .reviews__cards--text p {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 10px;
+}
+#reviews .reviews .swiper .swiper-slide .reviews__cards button {
+  width: 206px;
+  height: 40px;
+  background: #FF1A1A;
+  box-shadow: 0 8px 20px rgba(255, 26, 26, 0.2);
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 190px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#website .website {
+  padding: 120px;
+}
+#website .website .website__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+#website .website .website__top img {
+  width: 79px;
+  height: 90px;
+}
+#website .website .website__top h4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+#website .website .website__top p, #website .website .website__top a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #9099A3;
+}
+#website .website .website__top .website__top--menu a {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+#website .website .website__top .website__top--connection p {
+  padding: 15px 0;
+}
+#website .website .website__top .website__top--connection p a {
+  color: #0d92d9;
+}
+#website .website .website__top .website__top--connection .website__top--connection--set a .website__top--connection--set-icon {
+  background: #DADADA;
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 5px 2px;
+  color: black;
+}
+#website .website .website__top .website__top--address p {
+  padding: 15px 0;
+}
+#website .website .website__bottom {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#website .website .website__bottom p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #9099A3;
+}
+#website .website .website__bottom .website__bottom--right {
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+}
+#website .website .website__bottom .website__bottom--right img {
+  padding: 0 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
