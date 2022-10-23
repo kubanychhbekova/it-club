@@ -6,13 +6,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sass</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
     <link rel="stylesheet" href="./css/media.css">
     <title>MOTION WEB LLC</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
     <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -24,6 +26,34 @@
 </head>
 <body>
 <main id="main">
+    <section id="header">
+        <div class="container">
+            <div class="header">
+                <div class="header__logo">
+                    <img src="./img/motion%20logo.svg" alt="">
+                    <p class="header__logo--text">Образовательная <br>
+                        платформа <br>
+                        MOTION WEB LLC</p>
+                </div>
+                <div class="header__menu">
+                    <a href="index.html">наши курсы</a>
+                    <a href="#">IT-club</a>
+                    <a href="#">IT-camp</a>
+                    <a href="#">магазин</a>
+                </div>
+                <div class="header__language">
+                    <select>
+                        <option>
+                            Ру
+                        </option>
+                        <option>
+                            Кр
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="hero">
         <div class="container">
             <div class="hero">
@@ -39,7 +69,7 @@
                         <img src="./img/home.svg" alt="">
                     </div>
                 </div>
-                </div>
+            </div>
 
         </div>
     </section>
@@ -49,7 +79,7 @@
                 <h1>МИССИЯ КЛУБА</h1>
                 <button class="club__btn1">
                     <p>Кайдзен Клуб - это масштабный, международный бизнес- <br>
-                        клуб. Это специально  разработанная экосистема продуктов, <br>
+                        клуб. Это специально разработанная экосистема продуктов, <br>
                         материалов и нетворкинга для развития и масштабирования <br>
                         бизнеса, взаимной поддержки, взаимопомощи и продвижения <br>
                         друг друга, развития связей и усиления безопасности бизнеса <br>
@@ -105,125 +135,194 @@
     <section id="travel">
         <div class="container">
             <div class="travel">
-<div class="travel__format">
-    <h1>ФОРМАТЫ IT КЛУБА</h1>
-    <div>
-        <button>
-        <div class="travel__img">
-            <img src="./img/mans.svg" alt="" class="travel__img1">
-            <img src="./img/01..svg" alt="" class="travel__img2">
+                <div class="travel__format">
+                    <h1>ФОРМАТЫ IT КЛУБА</h1>
+                    <div>
+                        <button>
+                            <div class="travel__img">
+                                <img src="./img/mans.svg" alt="" class="travel__img1">
+                                <img src="./img/01..svg" alt="" class="travel__img2">
+                            </div>
+                            <h4>Слеты клуба с участием резидентов <br>
+                                со всего мира</h4>
+                            <p>Слеты проводятся 2 раза в год в формате масштабных <br>
+                                форумов, pre-party, after-party c Маргуланом. Локации: <br>
+                                Анталия, ОАЭ и другие</p>
+                            <div class="travel__button">
+                                <img src="./img/Rectangle%203.svg" alt="">
+                                <h3>Подробнее</h3>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="travel__format1">
+                    <div>
+                        <button>
+                            <div class="travel__img">
+                                <img src="./img/book.svg" alt="" class="travel__img1">
+                                <img src="./img/02..svg" alt="" class="travel__img2">
+                            </div>
+                            <h4>Встречи с Маргуланом Сейсембаем и <br>
+                                спикерами клуба</h4>
+                            <p>Ежемесячные закрытые онлайн встречи членов клуба - <br>
+                                владельцев и топ-менеджеров крупных компаний. <br>
+                                Наработанный опыт, успешные кейсы, подводные камни, </p>
+                            <div class="travel__button1">
+                                <img src="./img/Rectangle%203.svg" alt="" class="travel__img3">
+                                <h3>Подробнее</h3>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="travel__format">
+                    <div>
+                        <button>
+                            <div class="travel__img">
+                                <img src="./img/video.svg" alt="" class="travel__img1">
+                                <img src="./img/03..svg" alt="" class="travel__img2">
+                            </div>
+                            <h4>Доступ к обучающим программам <br>
+                                Кайдзен Школы</h4>
+                            <p>Из любой точки мира и в любое время обучайтесь ценным <br>
+                                инструментам роста и масштабирования личной эффективности <br>
+                                и своего бизнеса.</p>
+                            <div class="travel__button">
+                                <img src="./img/Rectangle%203.svg" alt="">
+                                <h3>Подробнее</h3>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="travel__format">
+                    <div>
+                        <button>
+                            <div class="travel__img">
+                                <img src="./img/man.svg" alt="" class="travel__img1">
+                                <img src="./img/04..svg" alt="" class="travel__img2">
+                            </div>
+                            <h4>Оффлайн встречи в вашем городе</h4>
+                            <p>Каждый месяц в вашем городе будут проводиться бизнес- <br>
+                                митинги с другими членами Клуба для знакомства, обмена <br>
+                                опытом, нетворкинга и развития</p>
+                            <div class="travel__button3">
+                                <img src="./img/Rectangle%203.svg" alt="">
+                                <h3>Подробнее</h3>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="travel__format">
+                    <div>
+                        <button>
+                            <div class="travel__img">
+                                <img src="./img/idea.svg" alt="" class="travel__img1">
+                                <img src="./img/05..svg" alt="" class="travel__img2">
+                            </div>
+                            <div class="travel__top">
+                                <h4>Мастермайнд сессии</h4>
+                                <p>Каждый месяц онлайн встречи членов клуба с детальными <br>
+                                    разборами конкретных кейсов и вопросов членов Клуба</p>
+                            </div>
+                            <div class="travel__button2">
+                                <img src="./img/Rectangle%203.svg" alt="">
+                                <h3>Подробнее</h3>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="travel__format">
+                    <div>
+                        <button>
+                            <div class="travel__img">
+                                <img src="./img/tell.svg" alt="" class="travel__img1">
+                                <img src="./img/06..svg" alt="" class="travel__img2">
+                            </div>
+                            <h4>Встречи с Маргуланом Сейсембаем и <br>
+                                спикерами клуба</h4>
+                            <p>Ежемесячные закрытые онлайн встречи членов клуба - <br>
+                                владельцев и топ-менеджеров крупных компаний. <br>
+                                Наработанный опыт, успешные кейсы, подводные камни, </p>
+                            <div class="travel__button1">
+                                <img src="./img/Rectangle%203.svg" alt="">
+                                <h3>Подробнее</h3>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h4>Слеты клуба с участием резидентов <br>
-            со всего мира</h4>
-        <p>Слеты проводятся 2 раза в год в формате масштабных <br>
-            форумов, pre-party, after-party c Маргуланом. Локации: <br>
-            Анталия, ОАЭ и другие</p>
-<div class="travel__button1">
-    <img src="./img/Rectangle%203.svg" alt="">
-    <h3>Подробнее</h3>
-    <ion-icon name="arrow-forward-outline"></ion-icon>
-</div>
-        </button>
-</div>
-            </div>
-<div class="travel__format1">
-    <div>
-        <button>
-        <div class="travel__img">
-            <img src="./img/book.svg" alt="" class="travel__img1">
-            <img src="./img/02..svg" alt="" class="travel__img2">
+    </section>
+    <section id="infest">
+        <div class="container">
+            <div class="infest">
+                <h1>СОВМЕСТНЫЕ ПУТЕШЕСТВИЯ</h1>
+                <button><h2>Путешествия по всему миру</h2>
+                <p>Трансформационные экспедиционные туры с Маргуланом и <br>
+                    другими известными экспертами в бизнесе, переговорах, <br>
+                    инвестициях и личной эффективности<p>
+                    <div class="infest__icon">
+                        <ion-icon name="checkmark-outline"></ion-icon>
+                        <h5>Новые яркие эмоции <br>
+                            и инсайты</h5>
+                        <ion-icon name="checkmark-outline"></ion-icon>
+                        <h5>Переосмысление текущих <br>
+                            задач и планов</h5>
+                    </div>
+                    <div class="infest__top__title">
+                        <div class="infest__top1">
+                            <h3>Подробнее</h3>  </div>
+                        <div class="infest__top2">
+                            <img src="./img/btn.png" alt="">
+                        </div>
+                        <div class="infest__to">
+                            <a href="https://www.youtube.com/watch?v=r6FvPv7vToE" data-fancybox>
+                            <img src="./img/to_be_youself%201.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+                </button>
         </div>
-        <h4>Встречи с Маргуланом Сейсембаем и <br>
-            спикерами клуба</h4>
-        <p>Ежемесячные закрытые онлайн встречи членов клуба - <br>
-            владельцев и топ-менеджеров крупных компаний. <br>
-            Наработанный опыт, успешные кейсы, подводные камни, </p>
-<div class="travel__button1">
-    <img src="./img/Rectangle%203.svg" alt="" class="travel__img3">
-    <h3>Подробнее</h3>
-    <ion-icon name="arrow-forward-outline"></ion-icon>
-</div>
-        </button>
-</div>
-            </div>
-<div class="travel__format">
-    <div>
-        <button>
-        <div class="travel__img">
-            <img src="./img/video.svg" alt="" class="travel__img1">
-            <img src="./img/03..svg" alt="" class="travel__img2">
+            <div class="infest-club">
+                <h1>ИНВЕСТ КЛУБ</h1>
+                <button>
+                    <div class="infest-club__to1">
+                        <a href="https://www.youtube.com/watch?v=RfrzzLZvBhY " data-fancybox="">
+                        <img src="./img/youself%201.svg" alt=""></a>
+                    </div>
+                    <h2>Обучение инвестированию</h2>
+                <p>Это сообщество частных инвесторов и партнеров которое дает <br>
+                    возможность делать совместные сделки с Маргуланом Сейсембаем<p>
+                    <div class="infest-club__icon">
+                        <ion-icon name="checkmark-outline"></ion-icon>
+                        <h5>Доступ к проектам, <br>
+                            отобранным Маргуланом</h5>
+                        <ion-icon name="checkmark-outline"></ion-icon>
+                        <h5>Возможность стать <br>
+                            партнером Маргулана</h5>
+                    </div>
+                    <div class="infest-club__top__title">
+                        <div class="infest-club__top1">
+                            <h3>Подробнее</h3>  </div>
+                        <div class="infest-club__top2">
+                            <img src="./img/btn.png" alt="">
+                        </div>
+                    </div>
+
+
+
+
+                </button>
         </div>
-        <h4>Доступ к обучающим программам <br>
-            Кайдзен Школы</h4>
-        <p>Из любой точки мира и в любое время обучайтесь ценным <br>
-            инструментам роста и масштабирования личной эффективности <br>
-            и своего бизнеса.</p>
-<div class="travel__button">
-    <img src="./img/Rectangle%203.svg" alt="">
-    <h3>Подробнее</h3>
-    <ion-icon name="arrow-forward-outline"></ion-icon>
-</div>
-        </button>
-</div>
-            </div>
-<div class="travel__format">
-    <div>
-        <button>
-        <div class="travel__img">
-            <img src="./img/man.svg" alt="" class="travel__img1">
-            <img src="./img/04..svg" alt="" class="travel__img2">
-        </div>
-        <h4>Оффлайн встречи в вашем городе</h4>
-        <p>Каждый месяц в вашем городе будут проводиться бизнес- <br>
-            митинги с другими членами Клуба для знакомства, обмена <br>
-            опытом, нетворкинга и развития</p>
-<div class="travel__button">
-    <img src="./img/Rectangle%203.svg" alt="">
-    <h3>Подробнее</h3>
-    <ion-icon name="arrow-forward-outline"></ion-icon>
-</div>
-        </button>
-</div>
-            </div>
-<div class="travel__format">
-    <div>
-        <button>
-        <div class="travel__img">
-            <img src="./img/idea.svg" alt="" class="travel__img1">
-            <img src="./img/05..svg" alt="" class="travel__img2">
-        </div>
-        <h4>Мастермайнд сессии</h4>
-        <p>Каждый месяц онлайн встречи членов клуба с детальными <br>
-            разборами конкретных кейсов и вопросов членов Клуба</p>
-<div class="travel__button">
-    <img src="./img/Rectangle%203.svg" alt="">
-    <h3>Подробнее</h3>
-    <ion-icon name="arrow-forward-outline"></ion-icon>
-</div>
-        </button>
-</div>
-            </div>
-<div class="travel__format">
-    <div>
-        <button>
-        <div class="travel__img">
-            <img src="./img/tell.svg" alt="" class="travel__img1">
-            <img src="./img/06..svg" alt="" class="travel__img2">
-        </div>
-        <h4>Встречи с Маргуланом Сейсембаем и <br>
-            спикерами клуба</h4>
-        <p>Ежемесячные закрытые онлайн встречи членов клуба - <br>
-            владельцев и топ-менеджеров крупных компаний. <br>
-            Наработанный опыт, успешные кейсы, подводные камни, </p>
-<div class="travel__button">
-    <img src="./img/Rectangle%203.svg" alt="">
-    <h3>Подробнее</h3>
-    <ion-icon name="arrow-forward-outline"></ion-icon>
-</div>
-        </button>
-</div>
-            </div>
-            </div>
         </div>
     </section>
     <section id="countries">
@@ -293,7 +392,62 @@
     <section id="progress">
         <div class="container">
             <div class="progress">
+<h1>ПРОЦЕСС ВСТУПЛЕНИЯ В КЛУБ</h1>
+                <div class="progress__process">
+                    <div class="progress__process1">
+                    <img src="./img/1.svg" alt="" class="progress__number">
+                    <img src="./img/_x30_40---Browser-Contact-Form.svg" alt="">
+                    <h5>Выбираете пакет участия</h5>
+                    <p>Подаете заявку и выбираете пакет <br>
+                        участия с вашим менеджером</p>
+                    </div>
+                    <div class="progress__process1">
+                    <img src="./img/2.svg" alt=""  class="progress__number">
+                    <img src="./img/debit-card%201.svg" alt="">
+                    <h5>Проходите отбор</h5>
+                    <p>Проходите отбор в кандидаты членов <br>
+                        Клуба и оплачиваете выбранный пакет <br>
+                        участия (на 6 месяцев)</p>
+                    </div>
+                    <div class="progress__process1">
+                    <img src="./img/3.svg" alt=""  class="progress__number">
+                    <img src="./img/checklist%201.svg" alt="">
+                    <h5>Проходите онбординг</h5>
+                    <p>Проходите онбординг и заполняете <br>
+                        подробную анкету о себе, <br>
+                        синхронизируете гугл календарь <br>
+                        и телеграмм с Платформой</p>
+                    </div>
+                    <div class="progress__process1">
+                    <img src="./img/4.svg" alt=""  class="progress__number">
+                    <img src="./img/coworking%201.svg" alt="">
+                    <h5>Участвуете в жизни клуба</h5>
+                    <p>Участвуете во всех мероприятиях <br>
+                        и встречах Клуба</p>
+                    </div>
 
+                </div>
+                <div class="progress__process2">
+                    <div class="progress__process1">
+                        <img src="./img/5.svg" alt=""  class="progress__number">
+                        <img src="./img/counting%201.svg" alt="">
+                        <h5>Мы принимаем решение о <br>
+                            вашем членстве в клубе</h5>
+                        <p>Через 6 месяцев после проверки <br>
+                            и собеседований мы принимаем <br>
+                            решение о вашем полноправном <br>
+                            членстве в Клубе</p>
+                    </div>
+                    <div class="progress__process1">
+                        <img src="./img/6.svg" alt=""  class="progress__number">
+                        <img src="./img/hired%201.svg" alt="">
+                        <h5>Становитесь полноправным <br>
+                            членом клуба</h5>
+                        <p>Оплачиваете выбранный годовой <br>
+                            пакет членства и становитесь <br>
+                            полноправным членом клуба</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -306,8 +460,6 @@
                         свяжется с вами и ответит на все <br>
                         ваши вопросы</p>
                 </div>
-
-
 
 
                 <div class="address__contact">
@@ -334,34 +486,13 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->
 </main>
 <script type="module">
-    import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
+    import {Fancybox} from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
 </script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./css/media.css"></script>
 </body>
 </html>

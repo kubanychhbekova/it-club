@@ -21,6 +21,10 @@ body {
   margin: 0 auto;
 }
 
+body {
+  background: black;
+}
+
 #hero .hero {
   background: url("../img/Rectangle 2068.png") no-repeat center/cover;
   min-height: 100vh;
@@ -28,7 +32,8 @@ body {
   margin-left: -190px;
 }
 #hero .hero__top {
-  padding: 100px 150px;
+  padding: 0 150px;
+  margin-bottom: 500px;
 }
 #hero .hero__top h1 {
   font-weight: 700;
@@ -42,6 +47,16 @@ body {
   color: #FFFFFF;
   padding: 20px 0;
 }
+#hero .hero__top p:hover {
+  color: #0c47c5;
+  transition: 0.7s;
+  cursor: pointer;
+}
+#hero .hero__top h1:hover {
+  color: #0c47c5;
+  transition: 0.7s;
+  cursor: pointer;
+}
 #hero .hero__top button {
   font-weight: 900;
   font-size: 18px;
@@ -54,6 +69,7 @@ body {
   background: #FF1A1A;
   box-shadow: 0 8px 20px rgba(118, 26, 255, 0.2);
   border-radius: 10px;
+  cursor: pointer;
 }
 #hero .hero__top button:hover {
   color: #b1dac2;
@@ -82,7 +98,7 @@ body {
 }
 
 #club {
-  background: rgba(30, 32, 36, 0.98);
+  background: black;
   padding: 10px;
 }
 #club .club h1 {
@@ -140,16 +156,16 @@ body {
   box-shadow: 0 9px 10px -5px #ffffff;
 }
 #club .club__img {
-  margin-top: 180px;
+  margin-top: 195px;
   margin-left: -450px;
 }
 #club .club__btn p {
   position: absolute;
-  margin-left: 700px;
+  margin-left: 740px;
   width: 510px;
   height: 126px;
   left: 60px;
-  top: 840px;
+  top: 1020px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -160,7 +176,7 @@ body {
 }
 #club .club__btn__icon p {
   position: absolute;
-  margin-left: 730px;
+  margin-left: 750px;
   margin-top: 200px;
   width: 560px;
   height: 126px;
@@ -177,7 +193,7 @@ body {
 }
 #club .club__btn__icon1 p {
   position: absolute;
-  margin-left: 715px;
+  margin-left: 735px;
   margin-top: 230px;
   width: 560px;
   height: 126px;
@@ -191,7 +207,7 @@ body {
 }
 #club .club__btn__icon3 p {
   position: absolute;
-  margin-left: 728px;
+  margin-left: 748px;
   margin-top: 280px;
   width: 560px;
   height: 126px;
@@ -205,7 +221,7 @@ body {
 }
 #club .club__btn__icon4 p {
   position: absolute;
-  margin-left: 728px;
+  margin-left: 750px;
   margin-top: 330px;
   width: 560px;
   height: 126px;
@@ -219,7 +235,7 @@ body {
 }
 #club .club__btn__icon5 p {
   position: absolute;
-  margin-left: 710px;
+  margin-left: 730px;
   margin-top: 355px;
   width: 560px;
   height: 126px;
@@ -233,7 +249,7 @@ body {
 }
 #club .club__btn__icon6 p {
   position: absolute;
-  margin-left: 642px;
+  margin-left: 662px;
   margin-top: 380px;
   width: 560px;
   height: 126px;
@@ -247,7 +263,7 @@ body {
 }
 #club .club__btn__icon7 p {
   position: absolute;
-  margin-left: 706px;
+  margin-left: 726px;
   margin-top: 405px;
   width: 560px;
   height: 126px;
@@ -281,15 +297,15 @@ body {
   color: #2C3E50;
 }
 #club .club__button h1 {
-  margin-top: -150px;
-  margin-left: -10px;
+  margin-top: -140px;
+  margin-left: 10px;
   font-weight: 700;
   font-size: 20px;
   color: #2C3E50;
 }
 #club .club__button p {
   margin-top: -30px;
-  margin-left: 2px;
+  margin-left: 22px;
   width: 404px;
   height: 222px;
   font-family: "Poppins", sans-serif;
@@ -304,6 +320,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   color: #2C3E50;
+  margin-left: 20px;
 }
 #club .club__button img {
   margin-left: 300px;
@@ -323,6 +340,18 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+#travel .travel :hover {
+  color: #c5b1da;
+  transition: 0.7s;
+  transform: translateY(-10px);
+  box-shadow: 0 9px 10px -5px white;
+}
+#travel .travel :focus {
+  background: black;
+}
+#travel .travel :active {
+  background: #ff003b;
 }
 #travel .travel__format {
   margin: 30px 0;
@@ -361,7 +390,7 @@ body {
   font-weight: 900;
   font-size: 18px;
   text-transform: capitalize;
-  margin-top: -5px;
+  margin-top: -25px;
   color: #FFFFFF;
 }
 #travel .travel__button img {
@@ -382,12 +411,14 @@ body {
 }
 #travel .travel__img1 {
   margin-left: 20px;
+  margin-top: 20px;
 }
 #travel .travel__img2 {
   margin-right: 20px;
+  margin-top: 10px;
 }
 #travel .travel__format1 {
-  margin-top: 100px;
+  margin-top: 110px;
 }
 #travel .travel__format1 button {
   width: 500px;
@@ -422,11 +453,59 @@ body {
   font-weight: 900;
   font-size: 18px;
   text-transform: capitalize;
-  margin-top: -5px;
+  margin-top: -20px;
   color: #FFFFFF;
 }
 #travel .travel__button1 img {
   margin-top: 10px;
+}
+#travel .travel__button2 {
+  display: flex;
+  align-items: center;
+  margin-left: 280px;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-top: 35px;
+  color: #FFFFFF;
+}
+#travel .travel__button2 img {
+  margin-top: 10px;
+}
+#travel .travel__button2 h3 {
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-left: -170px;
+}
+#travel .travel__button3 {
+  display: flex;
+  align-items: center;
+  margin-left: 280px;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-top: 20px;
+  color: #FFFFFF;
+}
+#travel .travel__button3 img {
+  margin-top: 10px;
+}
+#travel .travel__button3 h3 {
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-left: -170px;
+}
+#travel .travel__top h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: -450px;
+  margin-right: 250px;
+  color: #2C3E50;
 }
 #travel .travel__button1 h3 {
   font-weight: 900;
@@ -458,7 +537,138 @@ body {
   color: #FFFFFF;
 }
 
+#infest {
+  background: black;
+}
+#infest :hover {
+  color: #193eee;
+  transition: 0.7s;
+  transform: translateY(-10px);
+  box-shadow: 0 9px 10px -5px white;
+}
+#infest :focus {
+  background: black;
+}
+#infest :active {
+  background: #ff003b;
+}
+#infest .infest h1 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 50px;
+}
+#infest button {
+  width: 1040px;
+  height: 400px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+#infest button h2 {
+  margin-top: 40px;
+  margin-right: 600px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+}
+#infest button p {
+  margin-right: 490px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 60px;
+  color: #000000;
+}
+#infest button .infest__top__title {
+  display: flex;
+  align-items: center;
+}
+#infest button h5 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+#infest button .infest__icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 550px;
+  margin-left: 50px;
+}
+#infest button .infest__top1 {
+  margin-top: 40px;
+  margin-left: 250px;
+  z-index: 1;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+#infest button .infest__top2 {
+  margin-left: -300px;
+  margin-top: 50px;
+}
+#infest button .infest__to {
+  margin-top: -238px;
+}
+#infest .infest-club h1 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 50px;
+}
+#infest .infest-club__to1 {
+  margin-top: -24px;
+  margin-right: 700px;
+}
+#infest .infest-club button h2 {
+  margin-top: -350px;
+  margin-right: -300px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #121d0c;
+  margin-bottom: 20px;
+}
+#infest .infest-club button p {
+  margin-right: -450px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 60px;
+  color: #000000;
+}
+#infest .infest-club button .infest-club__icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 480px;
+}
+#infest .infest-club button .infest-club__top__title {
+  display: flex;
+  align-items: center;
+}
+#infest .infest-club button .infest-club__top1 {
+  margin-top: 40px;
+  margin-left: 700px;
+  z-index: 1;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+#infest .infest-club button .infest-club__top2 {
+  margin-left: -300px;
+  margin-top: 50px;
+}
+
 #countries {
+  box-shadow: 690px 370px 1000px red;
+  position: relative;
+  background: #1E2024;
   background: black;
 }
 #countries .country {
@@ -549,8 +759,61 @@ body {
   background: #ff003b;
 }
 
+#progress {
+  background: black;
+}
+#progress .progress h1 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 50px;
+}
+#progress .progress__process {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#progress .progress__process h5 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+#progress .progress__process p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+#progress .progress__process2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left: 130px;
+  margin-right: 120px;
+  padding: 50px 0;
+}
+#progress .progress__process2 h5 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+#progress .progress__process2 p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+#progress .progress__number {
+  margin-bottom: 50px;
+}
+
 #address {
-  background: #0a0a0a;
+  background: black;
 }
 #address .address {
   padding: 50px 0;
@@ -561,19 +824,16 @@ body {
 #address .address__gen:hover {
   color: #d90d3d;
   transition: 0.7s;
-  transform: translateY(-10px);
-  box-shadow: 0 9px 10px -5px white;
 }
 #address .address__gen h1 {
   font-weight: 700;
   font-size: 36px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 #address .address__gen h1:hover {
   color: #d90d3d;
   transition: 0.7s;
-  transform: translateY(-10px);
-  box-shadow: 0 9px 10px -5px white;
 }
 #address .address__gen h1:focus {
   background: black;
@@ -586,12 +846,11 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #9099A3;
+  cursor: pointer;
 }
 #address .address__gen p:hover {
   color: #d90d3d;
   transition: 0.7s;
-  transform: translateY(-10px);
-  box-shadow: 0 9px 10px -5px white;
 }
 #address .address__gen p:focus {
   background: black;

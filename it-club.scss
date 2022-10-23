@@ -4,7 +4,9 @@
 
 
 
-
+body {
+  background: black;
+}
 #hero {
   .hero {
     background: url("../img/Rectangle 2068.png") no-repeat center/cover;
@@ -12,7 +14,8 @@
     width: 1516px;
     margin-left: -190px;
     &__top {
-      padding: 100px 150px;
+      padding: 0 150px;
+      margin-bottom: 500px;
     }
     &__top h1 {
       font-weight: 700;
@@ -25,6 +28,16 @@
       line-height: 27px;
       color: #FFFFFF;
       padding: 20px 0;
+    }
+    &__top p:hover {
+      color: #0c47c5;
+      transition: 0.7s;
+      cursor: pointer;
+    }
+    &__top h1:hover {
+      color: #0c47c5;
+      transition: 0.7s;
+      cursor: pointer;
     }
     &__top button {
       font-weight: 900;
@@ -39,6 +52,7 @@
       background: #FF1A1A;
       box-shadow: 0 8px 20px rgba(118, 26, 255, 0.2);
       border-radius: 10px;
+      cursor: pointer;
     }
     &__top button:hover {
       color: #b1dac2;
@@ -72,7 +86,7 @@
 }
 
 #club {
-  background: rgba(30, 32, 36, 0.98);
+  background: black;
   padding: 10px;
 
   .club {
@@ -137,17 +151,17 @@
     }
 
     &__img {
-      margin-top: 180px;
+      margin-top: 195px;
       margin-left: -450px;
     }
 
     &__btn p {
       position: absolute;
-      margin-left: 700px;
+      margin-left: 740px;
       width: 510px;
       height: 126px;
       left: 60px;
-      top: 840px;
+      top: 1020px;
 
       font-family: 'Poppins', sans-serif;
       font-style: normal;
@@ -161,7 +175,7 @@
 
     &__btn__icon p {
       position: absolute;
-      margin-left: 730px;
+      margin-left: 750px;
       margin-top: 200px;
       width: 560px;
       height: 126px;
@@ -182,7 +196,7 @@
 
     &__btn__icon1 p {
       position: absolute;
-      margin-left: 715px;
+      margin-left: 735px;
       margin-top: 230px;
       width: 560px;
       height: 126px;
@@ -199,7 +213,7 @@
 
     &__btn__icon3 p {
       position: absolute;
-      margin-left: 728px;
+      margin-left: 748px;
       margin-top: 280px;
       width: 560px;
       height: 126px;
@@ -216,7 +230,7 @@
 
     &__btn__icon4 p {
       position: absolute;
-      margin-left: 728px;
+      margin-left: 750px;
       margin-top: 330px;
       width: 560px;
       height: 126px;
@@ -233,7 +247,7 @@
 
     &__btn__icon5 p {
       position: absolute;
-      margin-left: 710px;
+      margin-left: 730px;
       margin-top: 355px;
       width: 560px;
       height: 126px;
@@ -250,7 +264,7 @@
 
     &__btn__icon6 p {
       position: absolute;
-      margin-left: 642px;
+      margin-left: 662px;
       margin-top: 380px;
       width: 560px;
       height: 126px;
@@ -267,7 +281,7 @@
 
     &__btn__icon7 p {
       position: absolute;
-      margin-left: 706px;
+      margin-left: 726px;
       margin-top: 405px;
       width: 560px;
       height: 126px;
@@ -307,8 +321,8 @@
     }
 
     &__button h1 {
-      margin-top: -150px;
-      margin-left: -10px;
+      margin-top: -140px;
+      margin-left: 10px;
       font-weight: 700;
       font-size: 20px;
       color: #2C3E50;
@@ -316,7 +330,7 @@
 
     &__button p {
       margin-top: -30px;
-      margin-left: 2px;
+      margin-left: 22px;
       width: 404px;
       height: 222px;
       font-family: 'Poppins', sans-serif;
@@ -333,6 +347,7 @@
       font-weight: 700;
       font-size: 14px;
       color: #2C3E50;
+      margin-left: 20px;
     }
 
     &__button img {
@@ -354,6 +369,22 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    & :hover {
+      color: #c5b1da;
+      transition: 0.7s;
+      transform: translateY(-10px);
+      box-shadow: 0 9px 10px -5px #ffff;
+    }
+
+    & :focus {
+      background: black;
+    }
+
+    & :active {
+      background: #ff003b;
+    }
+
+
     &__format {
       margin:30px 0;
     }
@@ -391,7 +422,7 @@
       font-weight: 900;
       font-size: 18px;
       text-transform: capitalize;
-      margin-top: -5px;
+      margin-top: -25px;
       color: #FFFFFF;
 
     }
@@ -415,12 +446,14 @@
     }
     &__img1 {
       margin-left: 20px;
+      margin-top: 20px;
     }
     &__img2 {
       margin-right: 20px;
+      margin-top: 10px;
     }
     &__format1 {
-      margin-top: 100px;
+      margin-top: 110px;
     }
     &__format1 button {
       width: 500px;
@@ -455,13 +488,62 @@
       font-weight: 900;
       font-size: 18px;
       text-transform: capitalize;
-      margin-top: -5px;
+      margin-top: -20px;
       color: #FFFFFF;
 
     }
     &__button1 img{
       margin-top: 10px;
 
+    }
+    &__button2 {
+      display: flex;
+      align-items: center;
+      margin-left: 280px;
+      font-weight: 900;
+      font-size: 18px;
+      text-transform: capitalize;
+      margin-top: 35px;
+      color: #FFFFFF;
+    }
+    &__button2 img{
+      margin-top: 10px;
+    }
+    &__button2 h3{
+      font-weight: 900;
+      font-size: 18px;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      margin-left: -170px ;
+    }
+
+    &__button3 {
+      display: flex;
+      align-items: center;
+      margin-left: 280px;
+      font-weight: 900;
+      font-size: 18px;
+      text-transform: capitalize;
+      margin-top: 20px;
+      color: #FFFFFF;
+    }
+    &__button3 img{
+      margin-top: 10px;
+    }
+    &__button3 h3{
+      font-weight: 900;
+      font-size: 18px;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      margin-left: -170px ;
+    }
+    &__top h4{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: -450px;
+      margin-right: 250px;
+      color: #2C3E50;
     }
     &__button1 h3{
       font-weight: 900;
@@ -490,15 +572,151 @@
         text-transform: capitalize;
         margin-top: -5px;
         color: #FFFFFF;
-
       }
     }
   }
 }
+#infest {
+  background: black;
+  & :hover {
+    color: #193eee;
+    transition: 0.7s;
+    transform: translateY(-10px);
+    box-shadow: 0 9px 10px -5px #ffff;
+  }
+
+  & :focus {
+    background: black;
+  }
+
+  & :active {
+    background: #ff003b;
+  }
+
+
+  .infest h1{
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 50px;
+  }
+    & button {
+      width: 1040px;
+      height: 400px;
+      background: #FFFFFF;
+      border-radius: 15px;
+  }
+  & button h2 {
+    margin-top: 40px;
+    margin-right: 600px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+  }
+  & button p {
+    margin-right: 490px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 60px;
+    color: #000000;
+  }
+  & button .infest__top__title {
+    display: flex;
+    align-items: center;
+  }
+  & button h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+  & button .infest__icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 550px;
+    margin-left: 50px;
+  }
+  & button .infest__top1 {
+    margin-top: 40px;
+    margin-left: 250px;
+    z-index: 1;
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+  & button .infest__top2 {
+    margin-left: -300px;
+    margin-top: 50px;
+  }
+  & button .infest__to {
+    margin-top: -238px;
+  }
+  .infest-club {
+    & h1 {
+      font-weight: 700;
+      font-size: 36px;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 50px;
+    }
+      &__to1  {
+        margin-top: -24px;
+        margin-right: 700px;
+    }
+    & button h2 {
+      margin-top: -350px;
+      margin-right: -300px;
+      font-weight: 700;
+      font-size: 20px;
+      color: #121d0c;
+      margin-bottom: 20px;
+    }
+    & button p {
+      margin-right: -450px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 60px;
+      color: #000000;
+    }
+    & button .infest-club__icon {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-left: 480px;
+    }
+    & button .infest-club__top__title {
+      display: flex;
+      align-items: center;
+    }
+    & button .infest-club__top1 {
+      margin-top: 40px;
+      margin-left: 700px;
+      z-index: 1;
+      font-weight: 900;
+      font-size: 18px;
+      text-transform: capitalize;
+      color: #FFFFFF;
+    }
+    & button .infest-club__top2 {
+      margin-left: -300px;
+      margin-top: 50px;
+    }
+  }
+
+}
+
 
 #countries {
+  box-shadow: 690px 370px 1000px red ;
+  position: relative;
+  background:#1E2024 ;
   background: black;
-
   .country {
     padding: 50px 0;
 
@@ -609,8 +827,66 @@
   }
 }
 
+
+#progress {
+background: black;
+  .progress h1{
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px;
+  }
+  .progress {
+    &__process {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &__process h5 {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+      color: #FFFFFF;
+    }
+    &__process p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: #FFFFFF;
+    }
+
+
+
+    &__process2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-left: 130px;
+      margin-right: 120px;
+      padding: 50px 0;
+    }
+    &__process2 h5 {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+      color: #FFFFFF;
+    }
+    &__process2 p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: #FFFFFF;
+    }
+    &__number {
+      margin-bottom: 50px;
+    }
+  }
+}
 #address {
-  background: #0a0a0a;
+  background: black;
 
   .address {
     padding: 50px 0;
@@ -622,21 +898,19 @@
     &__gen:hover {
       color: #d90d3d;
       transition: 0.7s;
-      transform: translateY(-10px);
-      box-shadow: 0 9px 10px -5px #ffff;
+
     }
 
     &__gen h1 {
       font-weight: 700;
       font-size: 36px;
       color: #FFFFFF;
+      cursor: pointer;
     }
 
     &__gen h1:hover {
       color: #d90d3d;
       transition: 0.7s;
-      transform: translateY(-10px);
-      box-shadow: 0 9px 10px -5px #ffff;
     }
 
     &__gen h1:focus {
@@ -652,13 +926,12 @@
       font-weight: 400;
       font-size: 16px;
       color: #9099A3;
+      cursor: pointer;
     }
 
     &__gen p:hover {
       color: #d90d3d;
       transition: 0.7s;
-      transform: translateY(-10px);
-      box-shadow: 0 9px 10px -5px #ffff;
     }
 
     &__gen p:focus {

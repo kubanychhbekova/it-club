@@ -1,7 +1,19 @@
-<<<<<<< HEAD
-=======
-@media (max-width: 1024px) {
 
+@media (max-width: 1400px) {
+.container {
+  width: 90%;
+}
+  .club__btn p{
+    position: absolute;
+    top: 820px;
+  left: 10px;
+  }
 
 }
->>>>>>> 904884eb1bb5edf1d8c693acaf7dc4b9c90771ac
+@media  (max-width: 1024px) {
+  .header {
+    &__menu {
+      display: none;
+    }
+  }
+}
