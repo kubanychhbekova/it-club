@@ -1,7 +1,7 @@
 @import "reset";
 @import "mixins";
 @import "variables";
-@import "media";
+
 
 #header {
   background: #1E2024;
@@ -19,7 +19,7 @@
       justify-content: inherit;
       align-items: center;
 
-      .header__text {
+      p {
         font-weight: 400;
         font-size: 8px;
         line-height: 12px;
@@ -32,26 +32,22 @@
       justify-content: initial;
       align-items: center;
 
-
       a {
         font-weight: 500;
         font-size: 14px;
         color: #9099A3;
         text-transform: capitalize;
         padding: 0 30px;
+
         &:focus {
           color: white;
           border-bottom: 2px solid gray;
         }
       }
     }
-
     &__language {
-
-
       select {
-        width: 45px;
-        height: 25.6px;
+        padding: 3px 3px;
         border-radius: 12px;
         border: none;
         background: red;
@@ -60,8 +56,6 @@
         text-transform: capitalize;
 
         option {
-          width: 45px;
-          height: 25.6px;
           border-radius: 12px;
           border: none;
           background: red;
@@ -70,8 +64,99 @@
         }
       }
     }
-  }
+    #menu__toggle {
+      opacity: 0;
+    }
 
+    .menu__btn {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position:absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #616161;
+    }
+    .menu__btn > span::before {
+      content: '';
+      top: -8px;
+      z-index: 1;
+    }
+    .menu__btn > span::after {
+      content: '';
+      top: 8px;
+    }
+    .menu__box {
+      display: block;
+      position: fixed;
+      visibility:hidden;
+      top: 0;
+      left: -100%;
+      width: 300px;
+      height: 100%;
+      margin: 0;
+      padding: 80px 0;
+      list-style: none;
+      text-align: center;
+      background-color:#1E2024;
+      box-shadow: 1px 10px 60px rgba(236, 230, 230, 0.97);
+      z-index: 1;
+
+    }
+
+    .menu__item {
+      display: block;
+      padding: 12px 24px;
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .menu__item:hover {
+      color: red;
+      box-shadow: 0 0 100px red;
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+      transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0);
+
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+      visibility: visible;
+      left: 0;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      transition-duration: .25s;
+    }
+    .menu__box {
+      transition-duration: .25s;
+    }
+    .menu__item {
+      transition-duration: .25s;
+    }
+
+  }
 }
 
 #hero {
@@ -160,7 +245,7 @@
     justify-content: space-around;
     align-items: center;
 
-    .club__left {
+    &__left {
       p {
         font-weight: 400;
         font-size: 14px;
@@ -174,7 +259,7 @@
       }
     }
 
-    .club__right {
+    &__right {
       p {
         font-weight: 400;
         font-size: 14px;
@@ -191,7 +276,7 @@
         color: #2C3E50;
       }
 
-      .club__right-text {
+      &-text {
         display: flex;
         padding: 10px 0;
 
@@ -216,13 +301,12 @@
         display: flex;
         justify-content: space-between;
 
-        .club__text {
+        &__text {
           p {
             font-weight: 400;
             font-size: 14px;
             color: #2C3E50;
             line-height: 25px;
-
           }
 
           h6 {
@@ -238,18 +322,20 @@
 }
 
 #travel {
-  h1{
+  h1 {
     font-weight: 700;
     font-size: 36px;
     color: #FFFFFF;
-padding: 20px 0;
+    padding: 20px 0;
   }
+
   .travel {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    .travel__format {
+
+    &__format {
       position: relative;
       width: 500px;
       height: 300px;
@@ -257,7 +343,8 @@ padding: 20px 0;
       border-radius: 15px;
       padding: 20px;
       margin-bottom: 20px;
-box-shadow: 10px 0 100px rgba(225, 43, 43, 0.87);
+      box-shadow: 10px 0 100px rgba(225, 43, 43, 0.87);
+
       .travel__top {
         display: flex;
         justify-content: space-between;
@@ -268,7 +355,6 @@ box-shadow: 10px 0 100px rgba(225, 43, 43, 0.87);
           font-size: 24px;
           color: #9099A3;
         }
-
       }
 
       h1 {
@@ -293,10 +379,10 @@ box-shadow: 10px 0 100px rgba(225, 43, 43, 0.87);
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        bottom: 20px ;
+        bottom: 20px;
         right: 20px;
 
-        .travel__icon {
+        &__icon {
           font-size: 20px;
           text-align: center;
         }
@@ -307,7 +393,8 @@ box-shadow: 10px 0 100px rgba(225, 43, 43, 0.87);
 
 #countries {
   margin-top: 50px;
-  & h1 {
+
+   h1 {
     font-weight: 700;
     font-size: 30px;
     color: #FFFFFF;
@@ -328,6 +415,7 @@ box-shadow: 10px 0 100px rgba(225, 43, 43, 0.87);
       background: #ff003b;
     }
   }
+
   .countries {
     padding: 50px 0;
 
@@ -337,7 +425,7 @@ box-shadow: 10px 0 100px rgba(225, 43, 43, 0.87);
       justify-content: space-between;
       margin-left: -100px;
 
-      & h1 {
+       h1 {
         font-weight: 600;
         font-size: 54px;
         color: #FFFFFF;
@@ -364,7 +452,7 @@ box-shadow: 10px 0 100px rgba(225, 43, 43, 0.87);
       align-items: center;
       justify-content: space-around;
 
-      & h2 {
+       h2 {
         font-weight: 600;
         font-size: 36px;
         color: #FFFFFF;
@@ -391,7 +479,7 @@ box-shadow: 10px 0 100px rgba(225, 43, 43, 0.87);
       align-items: center;
       justify-content: space-evenly;
 
-      & h3 {
+      h3 {
         font-weight: 400;
         font-size: 24px;
         color: #FFFFFF;
@@ -417,161 +505,162 @@ box-shadow: 10px 0 100px rgba(225, 43, 43, 0.87);
 
 #address {
   .address {
-    padding: 50px 0;
+    margin: 50px 0;
     display: flex;
     justify-content: space-between;
     align-items: start;
 
-    &__gen:hover {
+   :hover {
       color: #d90d3d;
       transition: 0.7s;
       transform: translateY(-10px);
       box-shadow: 0 9px 10px -5px #ffff;
     }
 
-    &__gen h1 {
+    h1 {
       font-weight: 700;
       font-size: 36px;
       color: #FFFFFF;
+
+      &:hover {
+        color: #d90d3d;
+        transition: 0.7s;
+        transform: translateY(-10px);
+        box-shadow: 0 9px 10px -5px #ffff;
+      }
+
+      &:focus {
+        background: black;
+      }
+
+      &:active {
+        background: #ff003b;
+      }
     }
 
-    &__gen h1:hover {
-      color: #d90d3d;
-      transition: 0.7s;
-      transform: translateY(-10px);
-      box-shadow: 0 9px 10px -5px #ffff;
-    }
-
-    &__gen h1:focus {
-      background: black;
-    }
-
-    &__gen h1:active {
-      background: #ff003b;
-    }
-
-    &__gen p {
+  p {
       padding: 10px 0;
       font-weight: 400;
       font-size: 16px;
       color: #9099A3;
+
+      &:hover {
+        color: #d90d3d;
+        transition: 0.7s;
+        transform: translateY(-10px);
+        box-shadow: 0 9px 10px -5px #ffff;
+      }
+
+      &:focus {
+        background: black;
+      }
+
+      &:active {
+        background: #ff003b;
+      }
     }
 
-    &__gen p:hover {
-      color: #d90d3d;
-      transition: 0.7s;
-      transform: translateY(-10px);
-      box-shadow: 0 9px 10px -5px #ffff;
-    }
-
-    &__gen p:focus {
-      background: black;
-    }
-
-    &__gen p:active {
-      background: #ff003b;
-    }
-
-    &__contact p {
+  p {
       font-weight: 400;
       font-size: 14px;
       color: #9099A3;
       padding: 10px 0;
+
+      &:hover {
+        color: #0d92d9;
+        transition: 0.7s;
+        transform: translateY(-10px);
+        box-shadow: 0 9px 10px -5px #ffffff;
+      }
     }
 
-    &__contact p:hover {
-      color: #0d92d9;
-      transition: 0.7s;
-      transform: translateY(-10px);
-      box-shadow: 0 9px 10px -5px #ffffff;
-    }
-
-    &__contact input {
-      width: 580px;
+  input {
+      width: 500px;
       height: 60px;
       background: rgba(255, 255, 255, 0.2);
       border-radius: 15px;
       padding: 0 10px;
       box-shadow: 0 80px 1000px 2px red;
-    }
 
-    & input:hover {
-      color: #c6e3d2;
-      transition: 0.7s;
-      transform: translateY(-10px);
-      box-shadow: 0 9px 10px -5px #ffff;
-    }
+      &:hover {
+        color: #c6e3d2;
+        transition: 0.7s;
+        transform: translateY(-10px);
+        box-shadow: 0 9px 10px -5px #ffff;
+      }
 
-    & input:focus {
-      background: black;
-    }
+      &:focus {
+        background: black;
+      }
 
-    & input:active {
-      background: #b1dac2;
+      &:active {
+        background: #b1dac2;
+      }
     }
 
     &__btn {
       display: flex;
       align-items: center;
-    }
 
-    &__btn p {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-      color: #FFFFFF;
-    }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
 
-    &__btn p:hover {
-      color: #d90d3d;
-      transition: 0.7s;
-      transform: translateY(-10px);
-      box-shadow: 0 9px 10px -5px #ffff;
-    }
+        &:hover {
+          color: #d90d3d;
+          transition: 0.7s;
+          transform: translateY(-10px);
+          box-shadow: 0 9px 10px -5px #ffff;
+        }
 
-    &__btn p:focus {
-      background: black;
-    }
+        &:focus {
+          background: black;
+        }
 
-    &__btn p:active {
-      background: #ff003b;
-    }
+        &:active {
+          background: #ff003b;
+        }
+      }
 
-    &__btn button {
-      font-weight: 700;
-      font-size: 18px;
-      color: #FFFFFF;
-      width: 280px;
-      height: 60px;
-      background: #FF1A1A;
-      box-shadow: 0 5px 8px rgba(26, 92, 255, 0.2);
-      border-radius: 15px;
-      margin: 20px;
-    }
+      button {
+        font-weight: 700;
+        font-size: 18px;
+        color: #FFFFFF;
+        width: 280px;
+        height: 60px;
+        background: #FF1A1A;
+        box-shadow: 0 5px 8px rgba(26, 92, 255, 0.2);
+        border-radius: 15px;
+        margin: 20px;
 
-    & button:hover {
-      color: #121d0c;
-      transition: 0.7s;
-      transform: translateY(-10px);
-      box-shadow: 0 9px 10px -5px #ffff;
-    }
+        &:hover {
+          color: #121d0c;
+          transition: 0.7s;
+          transform: translateY(-10px);
+          box-shadow: 0 9px 10px -5px #ffff;
+        }
 
-    & button:focus {
-      background: black;
-    }
+        &:focus {
+          background: black;
+        }
 
-    & button:active {
-      background: #ff003b;
+        &:active {
+          background: #ff003b;
+        }
+      }
     }
   }
 }
 
 #footer {
   background: #1E2024;
+
   .footer {
     padding: 120px;
 
-    .footer__top {
+    &__top {
       display: flex;
       justify-content: space-between;
       align-items: start;
@@ -599,7 +688,7 @@ box-shadow: 10px 0 100px rgba(225, 43, 43, 0.87);
         }
       }
 
-      .footer__connection {
+      .footer__connection{
         p {
           padding: 15px 0;
 
@@ -631,7 +720,7 @@ box-shadow: 10px 0 100px rgba(225, 43, 43, 0.87);
       }
     }
 
-    .footer__bottom {
+    &__bottom {
       margin-top: 100px;
       display: flex;
       justify-content: space-between;

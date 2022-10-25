@@ -1,44 +1,52 @@
-@media  (max-width: 360px) {
-  .container {
-    width: 90%;
-    padding: 0;
-  }
-  .header .header__menu {
-    display: none;
-  }
-  .hero1 {
-    position: relative;
-    flex-wrap: wrap;
-  }
-  .hero1__text {
-    position: absolute;
-    font-size: 50%;
-  }
-  .hero1__text h2, .hero1__text h1 {
-    font-size: 40%;
-    font-weight: 100;
-    padding: 0;
-    line-height: 0;
-  }
-  .hero1 img {
-    width: 99%;
-  }
-  .courses .coursers__cards {
-    position: relative;
+@media (max-width: 360px) {
+  #courses .courses .swiper .swiper-slide .coursers__cards {
+    display: flex;
+    justify-content: start;
+    align-items: center;
     flex-direction: column-reverse;
-    height: 550px;
+    width: 10%;
+    height: 500px;
+    text-align: center;
   }
-  .courses .coursers__cards__text {
+  #courses .courses .swiper .swiper-slide .coursers__cards .coursers__text .coursers__top {
+    left: 10px;
+  }
+  #courses .courses .swiper .swiper-slide .coursers__cards .coursers__text h2 {
     position: absolute;
-    flex-wrap: wrap;
+    left: 10px;
   }
-  .webinars .webinars__card {
+  #courses .courses .swiper .swiper-slide .coursers__cards .coursers__text p {
+    position: absolute;
+    left: 20px;
+    bottom: 240px;
+  }
+  #courses .courses .swiper .swiper-slide .coursers__cards .coursers__text button {
+    top: 270px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+  }
+  #courses .courses .swiper .swiper-slide .coursers__cards .users__img {
+    width: 30%;
+    height: 30%;
+    margin-right: 200px;
+  }
+  #hero1 .hero1__text {
+    text-align: center;
+  }
+  #webinars .webinars__cards .webinars__card {
+    flex-direction: column-reverse;
     width: 320px;
-    height: 439px;
-    flex-direction: column-reverse;
+  }
+  #webinars .webinars__cards .webinars__card .users__img {
+    width: 50%;
+    padding: 0;
+  }
+  #webinars #master-classes .master-classes .master-classes__card {
+    padding: 2px;
   }
 }
-@media  (max-width: 575px) {
+@media (max-width: 575px) {
   .container {
     width: 100%;
     padding: 0 15px;
@@ -62,36 +70,25 @@
   }
   .footer .footer__top {
     text-align: center;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-  .hero1 {
-    position: relative;
-    flex-wrap: wrap;
-  }
-  .hero1__text {
-    position: absolute;
-    font-size: 50%;
-  }
-  .hero1__text h2, .hero1__text h1 {
-    font-size: 40%;
-    font-weight: 100;
-    padding: 0;
-    line-height: 0;
-  }
-  .hero1 img {
-    width: 99%;
+  #hero1 .hero1__text {
+    text-align: center;
   }
   .webinars__cards .webinars__card {
     width: 50%;
   }
 }
-@media screen and (max-width: 575px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .container {
-    width: 540px;
+    width: 100%;
+    padding: 0 15px;
   }
-  .header__menu {
+  #header .header__language {
     display: none;
-    flex-wrap: wrap;
+  }
+  #header .header__menu {
+    opacity: 0;
   }
   .address {
     flex-direction: column;
@@ -108,13 +105,7 @@
   }
   .footer .footer__top {
     text-align: center;
-    flex-wrap: wrap;
-  }
-  .footer .footer__bottom {
     flex-direction: column;
-  }
-  .footer .footer__bottom p {
-    padding: 20px 0;
   }
   .hero1 {
     position: relative;
@@ -137,25 +128,22 @@
     width: 50%;
   }
 }
-@media screen and (max-width: 575px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .container {
-    width: 720px;
+    width: 90%;
   }
-  .container .header {
-    width: 45%;
+  #header .header__burger {
+    display: none;
   }
-}
-@media screen and (max-width: 575px) and (max-width: 1199px) {
-  .container {
-    width: 960px;
+  .address {
+    flex-direction: column;
+    text-align: center;
   }
-  .container .header {
-    width: 100%;
+  .address .address__contact label input {
+    width: 50%;
   }
-}
-@media screen and (max-width: 575px) and (max-width: 1200px) {
-  .container {
-    width: 1140px;
+  .address .address__contact .address__btn {
+    flex-direction: column-reverse;
   }
 }
 

@@ -14,14 +14,11 @@ ul, ol, li {
 
 body {
   font-family: "Poppins", sans-serif;
-}
-
-#main {
-  background: #1E2023;
+  background: #1E2024;
 }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -41,7 +38,7 @@ body {
   justify-content: inherit;
   align-items: center;
 }
-#header .header__logo .header__text {
+#header .header__logo p {
   font-weight: 400;
   font-size: 8px;
   line-height: 12px;
@@ -64,8 +61,7 @@ body {
   border-bottom: 2px solid gray;
 }
 #header .header__language select {
-  width: 45px;
-  height: 25.6px;
+  padding: 3px 3px;
   border-radius: 12px;
   border: none;
   background: red;
@@ -74,13 +70,97 @@ body {
   text-transform: capitalize;
 }
 #header .header__language select option {
-  width: 45px;
-  height: 25.6px;
   border-radius: 12px;
   border: none;
   background: red;
   color: #FFFFFF;
   text-transform: capitalize;
+}
+#header .header #menu__toggle {
+  opacity: 0;
+}
+#header .header .menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+#header .header .menu__btn > span,
+#header .header .menu__btn > span::before,
+#header .header .menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+#header .header .menu__btn > span::before {
+  content: "";
+  top: -8px;
+  z-index: 1;
+}
+#header .header .menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+#header .header .menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #1E2024;
+  box-shadow: 1px 10px 60px rgba(236, 230, 230, 0.97);
+  z-index: 1;
+}
+#header .header .menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+#header .header .menu__item:hover {
+  color: red;
+  box-shadow: 0 0 100px red;
+}
+#header .header #menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#header .header #menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#header .header #menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#header .header #menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+#header .header .menu__btn > span,
+#header .header .menu__btn > span::before,
+#header .header .menu__btn > span::after {
+  transition-duration: 0.25s;
+}
+#header .header .menu__box {
+  transition-duration: 0.25s;
+}
+#header .header .menu__item {
+  transition-duration: 0.25s;
 }
 
 #hero1 .hero1 {
@@ -102,8 +182,7 @@ body {
   padding: 13px 0;
 }
 #hero1 .hero1__text button {
-  width: 180px;
-  height: 40.43px;
+  padding: 10px 20px;
   background: #FF1A1A;
   box-shadow: 0 8px 20px rgba(255, 26, 26, 0.2);
   border-radius: 10px;
@@ -113,7 +192,7 @@ body {
   color: #FFFFFF;
   cursor: pointer;
 }
-#hero1 .hero1 button:hover {
+#hero1 .hero1__text button:hover {
   transform: translateY(20px);
   box-shadow: 0 10px 100px #c74141;
   transition: 0.7s;
@@ -127,33 +206,28 @@ body {
 }
 #courses .courses .swiper {
   width: 100%;
-  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 #courses .courses .swiper .swiper-slide {
-  border-radius: 15px;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+#courses .courses .swiper .swiper-slide .swiper-slide {
+  display: block;
+  width: 100%;
 }
 #courses .courses .swiper .swiper-slide .coursers__cards {
   position: relative;
   background: #FFFFFF;
   border-radius: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
+  width: 500px;
+  padding: 0 10px;
 }
 #courses .courses .swiper .swiper-slide .coursers__cards .coursers__text .coursers__top {
   position: absolute;
@@ -176,12 +250,10 @@ body {
   color: #9099A3;
 }
 #courses .courses .swiper .swiper-slide .coursers__cards .coursers__text h2 {
-  margin-top: -80px;
   font-weight: 700;
   font-size: 20px;
   width: 300px;
   color: #2C3E50;
-  top: 100px;
 }
 #courses .courses .swiper .swiper-slide .coursers__cards .coursers__text p {
   font-weight: 400;
@@ -191,23 +263,17 @@ body {
 }
 #courses .courses .swiper .swiper-slide .coursers__cards .coursers__text button {
   position: absolute;
-  width: 180px;
-  height: 40px;
+  padding: 10px 20px;
   background: #FF1A1A;
   box-shadow: 0 8px 20px rgba(255, 26, 26, 0.2);
   border-radius: 10px;
-  border: none;
-  bottom: 20px;
-  left: 20px;
-  cursor: pointer;
-  transition: 0.7s;
-}
-#courses .courses .swiper .swiper-slide .coursers__cards .coursers__text button a {
   font-weight: 900;
   font-size: 14px;
-  line-height: 21px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: #FFFFFF;
+  cursor: pointer;
+  left: 20px;
+  bottom: 20px;
 }
 #courses .courses .swiper .swiper-slide .coursers__cards .coursers__text button:hover {
   transform: translateY(20px);
@@ -215,9 +281,12 @@ body {
   transition: 0.7s;
   transform: translateY(-20px);
 }
-#courses .courses .swiper .swiper-slide .coursers__cards img {
-  display: flex;
-  align-items: end;
+#courses .courses .swiper .swiper-slide .coursers__cards .coursers__text button a {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #FFFFFF;
 }
 
 #webinars .webinars {
@@ -229,9 +298,8 @@ body {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
-#webinars .webinars .webinars__btn {
-  width: 180px;
-  height: 40.43px;
+#webinars .webinars__btn {
+  padding: 10px 20px;
   background: #FF1A1A;
   box-shadow: 0 8px 20px rgba(255, 26, 26, 0.2);
   border-radius: 10px;
@@ -244,7 +312,7 @@ body {
   justify-content: center;
   padding-top: 10px;
 }
-#webinars .webinars .webinars__btn:hover {
+#webinars .webinars__btn:hover {
   transform: translateY(20px);
   box-shadow: 0 10px 100px #c74141;
   transition: 0.7s;
@@ -280,8 +348,6 @@ body {
 }
 #webinars .webinars__cards .webinars__card {
   position: relative;
-  width: 500px;
-  height: 300px;
   background: #FFFFFF;
   border-radius: 15px;
   display: flex;
@@ -298,15 +364,14 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 200px;
   top: 20px;
-  left: 20px;
 }
 #webinars .webinars__cards .webinars__card .webinars__text .webinars__top p {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: #9099A3;
+  padding: 0 10px;
 }
 #webinars .webinars__cards .webinars__card .webinars__text .webinars__top a {
   font-weight: 400;
@@ -328,20 +393,17 @@ body {
 }
 #webinars .webinars__cards .webinars__card .webinars__text button {
   position: absolute;
-  padding: 10px;
+  padding: 10px 20px;
   background: #FF1A1A;
   box-shadow: 0 8px 20px rgba(255, 26, 26, 0.2);
   border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  transition: 0.7s;
-  bottom: 20px;
-}
-#webinars .webinars__cards .webinars__card .webinars__text button a {
   font-weight: 900;
   font-size: 14px;
-  text-transform: capitalize;
-  color: white;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+  left: 20px;
+  bottom: 20px;
 }
 #webinars .webinars__cards .webinars__card .webinars__text button:hover {
   transform: translateY(20px);
@@ -349,20 +411,28 @@ body {
   transition: 0.7s;
   transform: translateY(-20px);
 }
+#webinars .webinars__cards .webinars__card .webinars__text button a {
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: white;
+}
 #webinars .webinars__cards .webinars__card .users__img {
   margin-top: 15px;
+  padding: 0 23px;
 }
 #webinars .webinars__cards .webinars__card .wild-logo {
   width: 200px;
   height: 240px;
   margin-right: 10px;
+  padding: 25px 30px;
 }
 #webinars .webinars__cards .webinars__card .full-stack-img {
-  padding: 30px;
+  padding: 50px 30px;
   border-radius: 50%;
 }
 #webinars .webinars__cards .webinars__card .nft-family {
-  width: 280px;
+  width: 300px;
   height: 300px;
   margin-top: 0;
 }
@@ -421,17 +491,17 @@ body {
 #master-classes .master-classes__input #busines:checked ~ .master-classes__card6 {
   display: none;
 }
-#master-classes .master-classes__input .master-classes__card:hover {
-  background: rgba(148, 245, 99, 0.99);
-}
 #master-classes .master-classes__input .master-classes__card {
-  width: 350px;
+  width: 290px;
   background: #FFFFFF;
   border-radius: 12px;
   padding: 20px 20px;
   margin-bottom: 20px;
 }
-#master-classes .master-classes__input .master-classes__card .master-classes__top {
+#master-classes .master-classes__input .master-classes__card:hover {
+  background: rgba(148, 245, 99, 0.99);
+}
+#master-classes .master-classes__input .master-classes__card__top {
   display: flex;
   justify-content: start;
 }
@@ -471,13 +541,12 @@ body {
   margin-top: 20px;
 }
 #master-classes .master-classes__input .master-classes__bottom .master-classes__text {
-  margin-left: 20px;
+  padding: 0 10px;
 }
 #master-classes .master-classes__input .master-classes__bottom .master-classes__text h1 {
   font-weight: 700;
   font-size: 16px;
   color: #2C3E50;
-  padding: 0 0;
 }
 #master-classes .master-classes__input .master-classes__bottom .master-classes__text p {
   font-weight: 400;
@@ -487,8 +556,6 @@ body {
   border: none;
 }
 #master-classes .master-classes__button {
-  width: 340px;
-  height: 50px;
   border: 2px solid #9099A3;
   filter: drop-shadow(0px 5px 8px rgba(26, 92, 255, 0.2));
   border-radius: 12px;
@@ -498,6 +565,7 @@ body {
   background: none;
   cursor: pointer;
   transition: 0.7s;
+  padding: 7px 20px;
 }
 #master-classes .master-classes__button:hover {
   box-shadow: 0 10px 100px rgba(148, 245, 99, 0.99);
@@ -509,7 +577,7 @@ body {
 }
 
 #address .address {
-  padding: 50px 0;
+  margin: 50px 0;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -568,23 +636,24 @@ body {
   box-shadow: 0 9px 10px -5px #ffffff;
 }
 #address .address__contact input {
-  width: 500px;
-  height: 60px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
-  padding: 0 10px;
+  padding: 20px 180px;
+  display: flex;
+  justify-content: start;
+  text-align: start;
   box-shadow: 0 80px 1000px 2px red;
 }
-#address .address input:hover {
+#address .address__contact input:hover {
   color: #c6e3d2;
   transition: 0.7s;
   transform: translateY(-10px);
   box-shadow: 0 9px 10px -5px white;
 }
-#address .address input:focus {
+#address .address__contact input:focus {
   background: black;
 }
-#address .address input:active {
+#address .address__contact input:active {
   background: #b1dac2;
 }
 #address .address__btn {
@@ -613,23 +682,22 @@ body {
   font-weight: 700;
   font-size: 18px;
   color: #FFFFFF;
-  width: 280px;
-  height: 60px;
+  padding: 20px 60px;
   background: #FF1A1A;
   box-shadow: 0 5px 8px rgba(26, 92, 255, 0.2);
   border-radius: 15px;
   margin: 20px;
 }
-#address .address button:hover {
+#address .address__btn button:hover {
   color: #121d0c;
   transition: 0.7s;
   transform: translateY(-10px);
   box-shadow: 0 9px 10px -5px white;
 }
-#address .address button:focus {
+#address .address__btn button:focus {
   background: black;
 }
-#address .address button:active {
+#address .address__btn button:active {
   background: #ff003b;
 }
 
@@ -695,8 +763,7 @@ body {
   margin-left: 5px;
 }
 #reviews .reviews .swiper .swiper-slide .reviews__cards button {
-  width: 180px;
-  height: 40.43px;
+  padding: 10px 20px;
   background: #FF1A1A;
   box-shadow: 0 8px 20px rgba(255, 26, 26, 0.2);
   border-radius: 10px;
@@ -713,38 +780,38 @@ body {
 #footer .footer {
   padding: 120px;
 }
-#footer .footer .footer__top {
+#footer .footer__top {
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
-#footer .footer .footer__top img {
+#footer .footer__top img {
   width: 79px;
   height: 90px;
 }
-#footer .footer .footer__top h4 {
+#footer .footer__top h4 {
   font-weight: 700;
   font-size: 18px;
   color: #FFFFFF;
 }
-#footer .footer .footer__top p, #footer .footer .footer__top a {
+#footer .footer__top p, #footer .footer__top a {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: #9099A3;
 }
-#footer .footer .footer__top .footer__menu a {
+#footer .footer__top .footer__menu a {
   display: flex;
   flex-direction: column;
   padding: 10px 0;
 }
-#footer .footer .footer__top .footer__connection p {
+#footer .footer__top .footer__connection p {
   padding: 15px 0;
 }
-#footer .footer .footer__top .footer__connection p a {
+#footer .footer__top .footer__connection p a {
   color: #0d92d9;
 }
-#footer .footer .footer__top .footer__connection .footer__set a .footer__set-icon {
+#footer .footer__top .footer__connection .footer__set a .footer__set-icon {
   background: #DADADA;
   height: 20px;
   width: 20px;
@@ -753,27 +820,27 @@ body {
   margin: 5px 2px;
   color: black;
 }
-#footer .footer .footer__top .footer__address p {
+#footer .footer__top .footer__address p {
   padding: 15px 0;
 }
-#footer .footer .footer__bottom {
+#footer .footer__bottom {
   margin-top: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#footer .footer .footer__bottom p {
+#footer .footer__bottom p {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: #9099A3;
 }
-#footer .footer .footer__bottom .footer__bottom--right {
+#footer .footer__bottom .footer__bottom--right {
   display: flex;
   justify-content: inherit;
   align-items: center;
 }
-#footer .footer .footer__bottom .footer__bottom--right img {
+#footer .footer__bottom .footer__bottom--right img {
   padding: 0 10px;
 }
 
